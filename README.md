@@ -43,4 +43,4 @@ The problem is based on rural youth out-migration and the challenge of discoveri
 
 The interface redesign was guided by [Unslop](https://github.com/heydamir/unslop), created by Damir Sokolovsky ([@heydamir](https://x.com/heydamir)), licensed under CC BY 4.0.
 
-A first-cut narrated demo video is available at `submission/video/maeul-ilgam-demo.mp4`. It uses labeled fictional generated images and real application screenshots; it is not continuous screen footage. See `submission/video/README.md` for remaining work before submission.
+A first-cut narrated demo video was produced locally at `submission/video/maeul-ilgam-demo.mp4`; the large MP4 is not included in this repository. It uses labeled fictional generated images and real application screenshots; it is not continuous screen footage. See `submission/video/README.md` for remaining work before submission.
