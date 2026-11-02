@@ -1,6 +1,6 @@
 export type Lang='en'|'ko';
 export type Draft={task:string;location:string;date:string;startTime:string;endTime:string;payAmount:string;payUnit:''|'hour'|'day'|'total';headcount:string;currency:'KRW'|'USD'};
-export type Job={id:string;status:'draft'|'published'|'closed';data:Draft;version:number;updatedAt:string;interestCount?:number};
+export type Job={id:string;status:'draft'|'published'|'closed';data:Draft;version:number;updatedAt:string;interestCount?:number;isDemo?:boolean};
 export type Working={data:Draft;request:string;phase:'request'|'questions'|'review';jobId:string|null;version:number|null};
 export const emptyDraft=():Draft=>({task:'',location:'',date:'',startTime:'',endTime:'',payAmount:'',payUnit:'',headcount:'',currency:'KRW'});
 export const emptyWorking=():Working=>({data:emptyDraft(),request:'',phase:'request',jobId:null,version:null});

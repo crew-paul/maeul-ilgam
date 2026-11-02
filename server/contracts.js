@@ -14,4 +14,4 @@ export function publicationErrors(d){const missing=missingFields(d);if(missing.l
 export function normalizeContact(type,value){if(typeof value!=='string')return null;const s=value.trim();if(type==='email')return z.string().email().max(254).safeParse(s).success?s.toLowerCase():null;if(type!=='phone')return null;let digits=s.replace(/[\s().-]/g,'');if(/^01\d{8,9}$/.test(digits))digits='+82'+digits.slice(1);return /^\+[1-9]\d{7,14}$/.test(digits)?digits:null;}
 export function containsContact(text){return /[\w.+-]+@[\w.-]+\.[a-z]{2,}|(?:\+?\d[\s().-]*){9,}/i.test(text);}
 export const redactContacts=text=>text.replace(/[\w.+-]+@[\w.-]+\.[a-z]{2,}/gi,'[contact removed]').replace(/(?:\+?\d[\s().-]*){9,}/g,'[contact removed]');
-export function publicJob(row){return {id:row.id,status:row.status,data:row.data,version:row.version,createdAt:row.created_at,updatedAt:row.updated_at};}
+export function publicJob(row){return {id:row.id,status:row.status,data:row.data,isDemo:row.is_demo===true,version:row.version,createdAt:row.created_at,updatedAt:row.updated_at};}

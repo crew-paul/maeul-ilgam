@@ -8,6 +8,8 @@ A farmer fills in a text form with all fields visible, then reviews the date, ti
 
 **Application data is held only in the server process memory**, as requested. PGlite runs without a file path; no remote database or disk database is used. Accounts, anonymous posting owners, verification challenges, sessions, jobs and interests reset when the server restarts. An anonymous working draft is held in a server Map for up to one hour and survives refresh and sign-in while that server is running. Separate users share the same running server's published listings. A private browser cookie lets a farmer manage their anonymous posts; clearing it loses management access. Browser cookies hold opaque tokens; only the language preference is stored in localStorage.
 
+`SEED_DEMO_DATA=1` creates 10 labeled fictional jobs when the server starts. The examples use future dates relative to startup, contain no personal contacts, and are marked Sample / 예시. Other records still reset on restart. Set the flag to `0` for an empty server.
+
 Run one server instance for this hackathon. Multiple instances have independent memory. This configuration intentionally does not preserve real service records across restarts.
 
 ## Run
@@ -48,7 +50,7 @@ The server enforces ownership, required fields, future dates, version conflicts,
 - Muse Voice Transcribe (`muse-voice-transcribe-1.0`) transcribes supported WAV audio. The browser converts recordings to mono 16-bit 24 kHz WAV. Audio is processed in memory and is not stored by the app.
 - Failed model calls are shown as errors with a manual writing path. There is no fake AI response. Summary read-aloud uses the device's speech synthesis.
 
-`npm run build` checks TypeScript and builds the UI. `node --test server/app.test.js` runs the focused integration checks for memory storage, authentication, ownership, publishing, interests and withdrawal. See [verification status](specs/release/implementation-status.md) for what was actually observed, including remaining limitations.
+`npm run build` checks TypeScript and builds the UI. `node --test server/role-journeys.test.js` checks the independent creator/applicant journey and the ten demo records. `node --test server/app.test.js` runs the focused integration checks for memory storage, authentication, ownership, publishing, interests and withdrawal. See [verification status](specs/release/implementation-status.md) for what was actually observed, including remaining limitations.
 
 ## Specification and submission
 
