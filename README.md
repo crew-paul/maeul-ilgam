@@ -4,7 +4,7 @@ A bilingual prototype for turning a rural farmer's request into a reviewable loc
 
 ## What it does
 
-A farmer enters a request, optionally transcribing a supported WAV with Meta Voice. Meta Muse Spark can draft structured fields when a server-side API key is configured. The farmer reviews and edits the draft before approving it for a youth-facing review. A young person can enter skills and availability and inspect the details. This is an in-session prototype: it does not publish listings, connect people, screen applicants, or guarantee employment.
+A farmer enters a request, optionally recording audio or transcribing a supported WAV with Meta Voice. Meta Muse Spark can draft structured fields when a server-side API key is configured. The farmer reviews and edits the draft before approving it for a youth-facing review. A young person can enter skills and availability and inspect the details. This is an in-session prototype: it does not publish listings, connect people, screen applicants, or guarantee employment.
 
 **Demo data is fictional.** Without a key, the app clearly labels a manual demo that copies the request into the task field and leaves the rest blank. It is not a simulated AI response and is not eligible evidence of Meta integration.
 
@@ -27,7 +27,7 @@ When enabled, the server sends user-provided text and uploaded audio to Meta. Us
 - `muse-spark-1.3` through Meta Model API chat completions: extracts a draft with task, location, timing and compensation.
 - `muse-voice-transcribe-1.0` through Meta Model API file transcription: transcribes a supported WAV upload.
 
-Live Meta draft generation was tested with a fictional English request. Voice transcription was tested with synthesized speech; recognition quality and real Korean dialects remain unvalidated. The app does not yet support microphone recording or a conversational follow-up loop. Users fill missing fields manually; the youth screen does not automatically assess compatibility.
+Live Meta draft generation was tested with a fictional English request. Voice transcription was tested with synthesized speech; recognition quality and real Korean dialects remain unvalidated. The browser can record microphone audio and convert it to WAV, and users can provide follow-up details for Meta to update the draft. Microphone recording has not yet been verified in a browser with a real microphone. The youth screen does not automatically assess compatibility.
 
 ## Tests
 
