@@ -19,7 +19,7 @@ Ma-eul Ilgam is a bilingual prototype that helps rural farmers turn requests int
 
 ## Describe your use of Meta products
 
-The prototype integrates Muse Spark 1.3 via Meta Model API to extract task, location, timing and compensation from a written request. It integrates Muse Voice Transcribe for supported WAV uploads. The farmer can edit the draft and unknown fields remain visible. [Verify both models with a real API key before claiming they work. If only one is tested, revise accordingly.]
+The prototype integrates Muse Spark 1.3 via Meta Model API to extract task, location, timing and compensation from a written request. It integrates Muse Voice Transcribe for supported WAV uploads. The farmer can edit the draft and unknown fields remain visible. [Before submitting, confirm these paths still work and describe any limitations observed.]
 
 ## Why are Meta's models important?
 

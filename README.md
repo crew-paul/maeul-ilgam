@@ -18,7 +18,7 @@ npm run build
 MODEL_API_KEY=your_key npm start
 ```
 
-Open http://127.0.0.1:3001. For UI development use `npm run dev` and open the Vite URL. Never put your key in a repository, a browser variable, or client code. The server reads `MODEL_API_KEY` from the environment; `.env.example` documents the variable but is not automatically loaded.
+Open http://127.0.0.1:3001. For UI development use `npm run dev` and open the Vite URL. Never put your key in a repository, a browser variable, or client code. The server reads `MODEL_API_KEY` or `META_API_KEY` from the environment or a local `.env` file.
 
 When enabled, the server sends user-provided text and uploaded audio to Meta. Use only material you have permission to share. The transcription endpoint accepts mono 16-bit PCM WAV at 16 kHz or 24 kHz; the app limits uploads to 12 MB. Unsupported audio fails rather than pretending it was transcribed.
 
@@ -27,7 +27,7 @@ When enabled, the server sends user-provided text and uploaded audio to Meta. Us
 - `muse-spark-1.3` through Meta Model API chat completions: extracts a draft with task, location, timing and compensation.
 - `muse-voice-transcribe-1.0` through Meta Model API file transcription: transcribes a supported WAV upload.
 
-Live Meta integration is implemented but **has not been tested with real credentials**. The app does not yet support microphone recording or a conversational follow-up loop. Users fill missing fields manually; the youth screen does not automatically assess compatibility.
+Live Meta draft generation was tested with a fictional English request. Voice transcription was tested with synthesized speech; recognition quality and real Korean dialects remain unvalidated. The app does not yet support microphone recording or a conversational follow-up loop. Users fill missing fields manually; the youth screen does not automatically assess compatibility.
 
 ## Tests
 
