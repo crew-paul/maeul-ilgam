@@ -1,48 +1,57 @@
 # Ma-eul Ilgam
 
-> **Hackathon specification v3:** [specs/README.md](specs/README.md) defines the focused 7-screen product: senior-friendly voice job creation, persistent publishing and discovery, and private phone/email interest sharing. Payment is direct between people. The current app is still an initial prototype; see [implementation status](specs/release/implementation-status.md).
+Local work, a conversation away. English by default, with Korean throughout.
 
-A bilingual prototype for turning a rural farmer's request into a reviewable local work opportunity. English is the default interface; 한국어 is available from the language switcher.
+A farmer describes the help they need. Meta extracts the details, the app asks for one missing detail at a time, and the farmer reviews the date, time and pay before posting. A young person can discover the opportunity and share a phone number or email with that farmer. Arrangements and payment happen directly between people.
 
-## What it does
+## Storage
 
-A farmer enters a request, optionally recording audio or transcribing a supported WAV with Meta Voice. Meta Muse Spark can draft structured fields when a server-side API key is configured. The farmer reviews and edits the draft before approving it for a youth-facing review. A young person can enter skills and availability and inspect the details. This is an in-session prototype: it does not publish listings, connect people, screen applicants, or guarantee employment.
+**Application data is held only in the server process memory**, as requested. PGlite runs without a file path; no remote database or disk database is used. Accounts, verification challenges, sessions, jobs and interests reset when the server restarts. An anonymous working draft is held in a server Map for up to one hour and survives refresh and sign-in while that server is running. Separate users share the same running server's published listings. Browser cookies hold opaque tokens; only the language preference is stored in localStorage.
 
-**Demo data is fictional.** Without a key, the app clearly labels a manual demo that copies the request into the task field and leaves the rest blank. It is not a simulated AI response and is not eligible evidence of Meta integration.
+Run one server instance for this hackathon. Multiple instances have independent memory. This configuration intentionally does not preserve real service records across restarts.
 
-## Run locally
+## Run
 
 Requires Node.js 20 or newer.
 
 ```sh
-npm install
+npm ci
+cp .env.example .env
+# Add your Meta key to .env; never commit it.
 npm run build
-MODEL_API_KEY=your_key npm start
+npm start
 ```
 
-Open http://127.0.0.1:3001. For UI development use `npm run dev` and open the Vite URL. Never put your key in a repository, a browser variable, or client code. The server reads `MODEL_API_KEY` or `META_API_KEY` from the environment or a local `.env` file.
+Open http://127.0.0.1:3001. For development use `npm run dev` and the Vite URL. The server loads `.env` and accepts `META_API_KEY` (or `MODEL_API_KEY`). Keys stay on the server.
 
-When enabled, the server sends user-provided text and uploaded audio to Meta. Use only material you have permission to share. The transcription endpoint accepts mono 16-bit PCM WAV at 16 kHz or 24 kHz; the app limits uploads to 12 MB. Unsupported audio fails rather than pretending it was transcribed.
+`AUTH_MODE=development` is a **local test mode**: codes are displayed on screen, not sent. For real verification, set `AUTH_MODE=provider` and configure Resend email and/or Twilio Verify SMS credentials. Production rejects development authentication and requires an HTTPS `APP_ORIGIN`. Real message delivery and public deployment have not been verified with provider accounts.
 
-## Meta products
+## Seven screens
 
-- `muse-spark-1.3` through Meta Model API chat completions: extracts a draft with task, location, timing and compensation.
-- `muse-voice-transcribe-1.0` through Meta Model API file transcription: transcribes a supported WAV upload.
+| Route | Purpose |
+|---|---|
+| `/` | Local opportunities and region search |
+| `/jobs/:id` | Opportunity details and contact-sharing consent |
+| `/sign-in` | Phone or email code verification |
+| `/farmer/jobs` | Own jobs, shared contacts, close recruitment |
+| `/farmer/jobs/new` | Voice-first posting, one question at a time |
+| `/farmer/jobs/:id/edit` | Edit own opportunity |
+| `/my/interests` | Own interests and withdrawal |
 
-Live Meta draft generation was tested with a fictional English request. Voice transcription was tested with synthesized speech; recognition quality and real Korean dialects remain unvalidated. The browser can record microphone audio and convert it to WAV, and users can provide follow-up details for Meta to update the draft. Microphone recording has not yet been verified in a browser with a real microphone. The youth screen does not automatically assess compatibility.
+The server enforces ownership, required fields, future dates, version conflicts, contact privacy and duplicate-interest protection. Withdrawing hides the contact from subsequent farmer requests. There is no applicant screening, automated hiring decision, chat, payment processing or payment ledger.
 
-## Tests
+## Meta and validation
 
-`npm run build` runs TypeScript and builds the client. `npm test` runs the targeted manual-draft test. See `specs/features/opportunity-workflow/validation.md` for the actual verification record.
+- Muse Spark (`muse-spark-1.3`) through Meta Model API extracts structured work details and updates the answered field. Unknown details remain empty for review.
+- Muse Voice Transcribe (`muse-voice-transcribe-1.0`) transcribes supported WAV audio. The browser converts recordings to mono 16-bit 24 kHz WAV. Audio is processed in memory and is not stored by the app.
+- Failed model calls are shown as errors with a manual writing path. There is no fake AI response. Summary read-aloud uses the device's speech synthesis.
 
-## Specification and hackathon scope
+`npm run build` checks TypeScript and builds the UI. `node --test server/app.test.js` runs the focused integration checks for memory storage, authentication, ownership, publishing, interests and withdrawal. See [verification status](specs/release/implementation-status.md) for what was actually observed, including remaining limitations.
 
-The constitution is in `specs/mission.md`, `specs/tech-stack.md`, and `specs/roadmap.md`. Each feature has a plan, requirements and validation document under `specs/features/`. See `submission/` for draft answers and a three-minute recording plan. All project-specific material in this repository was created during the hackathon; the repository uses third-party dependencies under their respective licenses.
+## Specification and submission
 
-The problem is based on rural youth out-migration and the challenge of discovering local opportunities. We have not validated outcomes with users or demonstrated that the prototype changes employment or population retention.
+[SDD v3](specs/README.md) is the current source of truth. Each feature has plan, requirements and validation documents. [Submission materials](submission/) include draft form answers and the demo script. The current MP4 is a locally generated draft, excluded from Git; it must match the final product before submission. No employment or population-retention outcome has been measured, and no older-adult user study has been completed.
 
 ## Design credit
 
-The interface redesign was guided by [Unslop](https://github.com/heydamir/unslop), created by Damir Sokolovsky ([@heydamir](https://x.com/heydamir)), licensed under CC BY 4.0.
-
-A first-cut narrated demo video was produced locally at `submission/video/maeul-ilgam-demo.mp4`; the large MP4 is not included in this repository. It uses labeled fictional generated images and real application screenshots; it is not continuous screen footage. See `submission/video/README.md` for remaining work before submission.
+Design guidance: [design-taste-frontend](https://github.com/Leonxlnx/taste-skill) and [Unslop](https://github.com/heydamir/unslop) by Damir Sokolovsky ([@heydamir](https://x.com/heydamir)), CC BY 4.0.
