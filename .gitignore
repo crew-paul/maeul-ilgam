@@ -7,3 +7,5 @@ dist/
 .DS_Store
 
 submission/video/*.mp4
+
+.data/

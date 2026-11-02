@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS schema_migrations (version text PRIMARY KEY, applied_at timestamptz NOT NULL DEFAULT now());
+CREATE TABLE IF NOT EXISTS users (id text PRIMARY KEY, identity text UNIQUE NOT NULL, channel text NOT NULL CHECK(channel IN ('phone','email')), created_at timestamptz NOT NULL DEFAULT now());
+CREATE TABLE IF NOT EXISTS auth_challenges (id text PRIMARY KEY, identity text NOT NULL, channel text NOT NULL, code_hash text NOT NULL, provider text NOT NULL, attempts integer NOT NULL DEFAULT 0, expires_at timestamptz NOT NULL, used_at timestamptz, created_at timestamptz NOT NULL DEFAULT now());
+CREATE INDEX IF NOT EXISTS auth_identity_time_idx ON auth_challenges(identity, created_at DESC);
+CREATE TABLE IF NOT EXISTS sessions (token_hash text PRIMARY KEY, user_id text NOT NULL REFERENCES users(id) ON DELETE CASCADE, expires_at timestamptz NOT NULL);
+CREATE INDEX IF NOT EXISTS sessions_user_idx ON sessions(user_id);
+CREATE TABLE IF NOT EXISTS jobs (id text PRIMARY KEY, owner_id text NOT NULL REFERENCES users(id), status text NOT NULL DEFAULT 'draft' CHECK(status IN ('draft','published','closed')), data jsonb NOT NULL, version integer NOT NULL DEFAULT 1, created_at timestamptz NOT NULL DEFAULT now(), updated_at timestamptz NOT NULL DEFAULT now());
+CREATE INDEX IF NOT EXISTS jobs_owner_idx ON jobs(owner_id,updated_at DESC);
+CREATE INDEX IF NOT EXISTS jobs_public_idx ON jobs(updated_at DESC,id) WHERE status='published';
+CREATE TABLE IF NOT EXISTS interests (id text PRIMARY KEY, job_id text NOT NULL REFERENCES jobs(id), user_id text NOT NULL REFERENCES users(id), name text NOT NULL, memo text NOT NULL, contact_type text NOT NULL CHECK(contact_type IN ('phone','email')), contact_value text NOT NULL, consent_at timestamptz NOT NULL, status text NOT NULL DEFAULT 'active' CHECK(status IN ('active','withdrawn')), created_at timestamptz NOT NULL DEFAULT now(), UNIQUE(job_id,user_id));
+CREATE INDEX IF NOT EXISTS interests_user_idx ON interests(user_id,created_at DESC);
+INSERT INTO schema_migrations(version) VALUES('001_core') ON CONFLICT DO NOTHING;
