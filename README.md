@@ -2,11 +2,11 @@
 
 Local work, a conversation away. English by default, with Korean throughout.
 
-A farmer describes the help they need. Meta extracts the details, the app asks for one missing detail at a time, and the farmer reviews the date, time and pay before posting. A young person can discover the opportunity and share a phone number or email with that farmer. Arrangements and payment happen directly between people.
+A farmer fills in a text form with all fields visible, then reviews the date, time and pay before posting. Voice input and Meta-assisted extraction are optional. Posting and viewing details do not require sign-in. A young person can discover the opportunity and share a phone number or email with that farmer. Arrangements and payment happen directly between people.
 
 ## Storage
 
-**Application data is held only in the server process memory**, as requested. PGlite runs without a file path; no remote database or disk database is used. Accounts, verification challenges, sessions, jobs and interests reset when the server restarts. An anonymous working draft is held in a server Map for up to one hour and survives refresh and sign-in while that server is running. Separate users share the same running server's published listings. Browser cookies hold opaque tokens; only the language preference is stored in localStorage.
+**Application data is held only in the server process memory**, as requested. PGlite runs without a file path; no remote database or disk database is used. Accounts, anonymous posting owners, verification challenges, sessions, jobs and interests reset when the server restarts. An anonymous working draft is held in a server Map for up to one hour and survives refresh and sign-in while that server is running. Separate users share the same running server's published listings. A private browser cookie lets a farmer manage their anonymous posts; clearing it loses management access. Browser cookies hold opaque tokens; only the language preference is stored in localStorage.
 
 Run one server instance for this hackathon. Multiple instances have independent memory. This configuration intentionally does not preserve real service records across restarts.
 
@@ -34,9 +34,11 @@ Open http://127.0.0.1:3001. For development use `npm run dev` and the Vite URL. 
 | `/jobs/:id` | Opportunity details and contact-sharing consent |
 | `/sign-in` | Phone or email code verification |
 | `/farmer/jobs` | Own jobs, shared contacts, close recruitment |
-| `/farmer/jobs/new` | Voice-first posting, one question at a time |
+| `/farmer/jobs/new` | Text-first posting, all fields visible; optional voice |
 | `/farmer/jobs/:id/edit` | Edit own opportunity |
 | `/my/interests` | Own interests and withdrawal |
+
+Anonymous posting and viewing work without authentication providers. Applying and sharing contact details still use the existing sign-in flow.
 
 The server enforces ownership, required fields, future dates, version conflicts, contact privacy and duplicate-interest protection. Withdrawing hides the contact from subsequent farmer requests. There is no applicant screening, automated hiring decision, chat, payment processing or payment ledger.
 

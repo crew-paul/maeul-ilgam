@@ -1,5 +1,5 @@
 CREATE TABLE IF NOT EXISTS schema_migrations (version text PRIMARY KEY, applied_at timestamptz NOT NULL DEFAULT now());
-CREATE TABLE IF NOT EXISTS users (id text PRIMARY KEY, identity text UNIQUE NOT NULL, channel text NOT NULL CHECK(channel IN ('phone','email')), created_at timestamptz NOT NULL DEFAULT now());
+CREATE TABLE IF NOT EXISTS users (id text PRIMARY KEY, identity text UNIQUE NOT NULL, channel text NOT NULL CHECK(channel IN ('phone','email','guest')), created_at timestamptz NOT NULL DEFAULT now());
 CREATE TABLE IF NOT EXISTS auth_challenges (id text PRIMARY KEY, identity text NOT NULL, channel text NOT NULL, code_hash text NOT NULL, provider text NOT NULL, attempts integer NOT NULL DEFAULT 0, expires_at timestamptz NOT NULL, used_at timestamptz, created_at timestamptz NOT NULL DEFAULT now());
 CREATE INDEX IF NOT EXISTS auth_identity_time_idx ON auth_challenges(identity, created_at DESC);
 CREATE TABLE IF NOT EXISTS sessions (token_hash text PRIMARY KEY, user_id text NOT NULL REFERENCES users(id) ON DELETE CASCADE, expires_at timestamptz NOT NULL);
