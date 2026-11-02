@@ -1,0 +1,422 @@
+[
+  {
+    "id": "01-farm",
+    "label": "A LITTLE HELP CAN MATTER",
+    "target": 8,
+    "stock": "Kampus Production / Pexels",
+    "parts": [
+      [
+        "farmer.mp4",
+        0,
+        8.8
+      ]
+    ],
+    "cues": [
+      {
+        "start": 0.22,
+        "end": 5.825,
+        "ko": "농가에는 수확뿐 아니라 사진 촬영과 포장처럼, 일손이 필요한 일이 있습니다.",
+        "en": "Farm work goes beyond harvesting.\nPhotography and packing can need extra hands."
+      }
+    ],
+    "start": 0,
+    "duration": 8.0
+  },
+  {
+    "id": "02-youth",
+    "label": "OPPORTUNITY SHOULD BE EASIER TO FIND",
+    "target": 8,
+    "stock": "Tima Miroshnichenko / Pexels",
+    "parts": [
+      [
+        "youth.mp4",
+        1,
+        11
+      ]
+    ],
+    "cues": [
+      {
+        "start": 0.22,
+        "end": 4.535,
+        "ko": "한편 청년은 가까운 마을에 어떤 일이 있는지 찾기 어렵습니다.",
+        "en": "Young people can struggle to discover\nwhat work is available nearby."
+      },
+      {
+        "start": 5.423,
+        "end": 7.37,
+        "ko": "서로를 만날 길이 필요합니다.",
+        "en": "They need a way to find each other."
+      }
+    ],
+    "start": 8.0,
+    "duration": 8.0
+  },
+  {
+    "id": "03-home",
+    "label": "VILLAGE JOBS / 마을일감",
+    "target": 7,
+    "parts": [
+      [
+        "creator-take.mp4",
+        0,
+        5.4
+      ]
+    ],
+    "cues": [
+      {
+        "start": 0.22,
+        "end": 2.98,
+        "ko": "마을일감, 영어로 빌리지 잡스입니다.",
+        "en": "Village Jobs — work close to home."
+      },
+      {
+        "start": 3.26,
+        "end": 7.426,
+        "ko": "농가의 유료 일감을 가까운 청년과 연결하는 엠브이피입니다.",
+        "en": "An MVP connecting rural paid tasks\nwith people nearby."
+      }
+    ],
+    "start": 16.0,
+    "duration": 8.056
+  },
+  {
+    "id": "04-text",
+    "label": "01 / TEXT FIRST. VOICE OPTIONAL.",
+    "target": 11,
+    "parts": [
+      [
+        "creator-take.mp4",
+        15.8,
+        12
+      ]
+    ],
+    "cues": [
+      {
+        "start": 0.22,
+        "end": 4.926,
+        "ko": "등록은 텍스트가 기본입니다. 모든 입력 항목을 펼쳐 두었습니다.",
+        "en": "Text is the default.\nEvery field is visible."
+      },
+      {
+        "start": 5.74,
+        "end": 10.37,
+        "ko": "음성 입력은 원할 때만 선택하고, 로그인 없이 시작할 수 있습니다.",
+        "en": "Voice is optional.\nPosting starts without sign-in."
+      }
+    ],
+    "start": 24.056,
+    "duration": 11.0
+  },
+  {
+    "id": "05-meta",
+    "label": "02 / REAL META MUSE SPARK RESPONSE",
+    "target": 13,
+    "parts": [
+      [
+        "creator-take.mp4",
+        32.5,
+        16
+      ]
+    ],
+    "cues": [
+      {
+        "start": 0.22,
+        "end": 5.595,
+        "ko": "조건 자동 채우기를 누르면 메타 뮤즈 스파크가 글에 적힌 조건을 추출합니다.",
+        "en": "Meta Muse Spark extracts\nthe conditions stated in the text."
+      },
+      {
+        "start": 6.755,
+        "end": 12.37,
+        "ko": "장소와 일정, 보수와 인원입니다. 지금 보이는 값은 실제 모델 응답입니다.",
+        "en": "Place, timing, pay and people needed.\nThese fields came from the live model response."
+      }
+    ],
+    "start": 35.056,
+    "duration": 13.0
+  },
+  {
+    "id": "06-review",
+    "label": "03 / THE FARMER STAYS IN CONTROL",
+    "target": 13,
+    "parts": [
+      [
+        "creator-take.mp4",
+        56.8,
+        10.5
+      ],
+      [
+        "creator-take.mp4",
+        84.6,
+        4.5
+      ]
+    ],
+    "cues": [
+      {
+        "start": 0.22,
+        "end": 2.853,
+        "ko": "모델이 최종 결정을 내리지는 않습니다.",
+        "en": "The model does not make the final decision."
+      },
+      {
+        "start": 5.133,
+        "end": 10.18,
+        "ko": "농가는 보수와 설명을 직접 고치고, 날짜와 시간을 다시 확인합니다.",
+        "en": "The farmer edits the pay and description,\nthen checks the date and time."
+      }
+    ],
+    "start": 48.056,
+    "duration": 13.0
+  },
+  {
+    "id": "07-publish",
+    "label": "04 / REVIEW, THEN PUBLISH",
+    "target": 8,
+    "parts": [
+      [
+        "creator-take.mp4",
+        92.7,
+        4
+      ],
+      [
+        "creator-take.mp4",
+        101,
+        5
+      ]
+    ],
+    "cues": [
+      {
+        "start": 0.22,
+        "end": 2.663,
+        "ko": "확인한 일감은 곧바로 공개됩니다.",
+        "en": "After review, the opportunity is published."
+      },
+      {
+        "start": 2.943,
+        "end": 7.433,
+        "ko": "생성자는 같은 브라우저에서 수정하거나 모집을 마칠 수 있습니다.",
+        "en": "The creator can edit or close it\nfrom the same browser."
+      }
+    ],
+    "start": 61.056,
+    "duration": 8.063
+  },
+  {
+    "id": "08-discover",
+    "label": "05 / DISCOVER LOCAL WORK",
+    "target": 10,
+    "parts": [
+      [
+        "applicant-take.mp4",
+        0,
+        9.6
+      ]
+    ],
+    "cues": [
+      {
+        "start": 0.22,
+        "end": 3.598,
+        "ko": "청년은 지역을 검색하고 자세히 보기를 누릅니다.",
+        "en": "A young person searches by town\nand opens the details."
+      },
+      {
+        "start": 5.612,
+        "end": 9.37,
+        "ko": "장소와 시간, 보수를 로그인 없이 확인할 수 있습니다.",
+        "en": "Place, time and pay are visible\nwithout sign-in."
+      }
+    ],
+    "start": 69.119,
+    "duration": 10.0
+  },
+  {
+    "id": "09-auth",
+    "label": "06 / LOCAL TEST AUTHENTICATION",
+    "target": 9,
+    "auth": true,
+    "parts": [
+      [
+        "applicant-take.mp4",
+        9.6,
+        14
+      ]
+    ],
+    "cues": [
+      {
+        "start": 0.22,
+        "end": 2.365,
+        "ko": "신청할 때는 본인을 확인합니다.",
+        "en": "Applying requires verification."
+      },
+      {
+        "start": 4.367,
+        "end": 8.37,
+        "ko": "이 시연은 이메일을 보내지 않는 로컬 테스트 인증을 사용합니다.",
+        "en": "This recording uses a local test code.\nNo email was sent."
+      }
+    ],
+    "start": 79.119,
+    "duration": 9.0
+  },
+  {
+    "id": "10-apply",
+    "label": "07 / CONTACT SHARING REQUIRES CONSENT",
+    "target": 13,
+    "parts": [
+      [
+        "applicant-take.mp4",
+        23.4,
+        5
+      ],
+      [
+        "applicant-take.mp4",
+        43,
+        10
+      ]
+    ],
+    "cues": [
+      {
+        "start": 0.22,
+        "end": 4.327,
+        "ko": "이름과 짧은 소개를 적고 전화번호나 이메일을 선택합니다.",
+        "en": "The applicant adds a name and note,\nthen chooses a phone number or email."
+      },
+      {
+        "start": 6.607,
+        "end": 10.343,
+        "ko": "농가에 연락처를 공유하는 데 동의해야 신청할 수 있습니다.",
+        "en": "Sharing that contact with this farmer\nrequires explicit consent."
+      }
+    ],
+    "start": 88.119,
+    "duration": 13.0
+  },
+  {
+    "id": "11-contact",
+    "label": "08 / START A DIRECT CONVERSATION",
+    "target": 13,
+    "parts": [
+      [
+        "contact-take.mp4",
+        0,
+        15
+      ]
+    ],
+    "cues": [
+      {
+        "start": 0.22,
+        "end": 3.77,
+        "ko": "농가는 내 일감에서 신청자의 연락처를 확인합니다.",
+        "en": "The farmer sees the shared contact\ninside My jobs."
+      },
+      {
+        "start": 6.05,
+        "end": 10.436,
+        "ko": "연락과 조건 협의, 보수 지급은 당사자가 직접 진행합니다.",
+        "en": "They arrange the work and payment directly.\nThe app does not process payments."
+      }
+    ],
+    "start": 101.119,
+    "duration": 13.0
+  },
+  {
+    "id": "12-withdraw",
+    "label": "09 / WITHDRAWAL HIDES THE CONTACT",
+    "target": 12,
+    "parts": [
+      [
+        "withdraw-take.mp4",
+        0,
+        2
+      ],
+      [
+        "withdraw-take.mp4",
+        8.5,
+        6
+      ],
+      [
+        "privacy-take.mp4",
+        0,
+        5
+      ]
+    ],
+    "cues": [
+      {
+        "start": 0.22,
+        "end": 4.28,
+        "ko": "신청을 취소하면 농가 화면에서 연락처가 숨겨집니다.",
+        "en": "Withdrawing hides the contact\nfrom subsequent farmer requests."
+      },
+      {
+        "start": 6.56,
+        "end": 10.145,
+        "ko": "이미 확인한 연락처까지 회수할 수 있는 것은 아닙니다.",
+        "en": "It cannot take back information\nthe farmer has already seen."
+      }
+    ],
+    "start": 114.119,
+    "duration": 12.0
+  },
+  {
+    "id": "13-limits",
+    "label": "10 / HONEST MVP BOUNDARIES",
+    "target": 15,
+    "parts": [
+      [
+        "privacy-take.mp4",
+        41,
+        6
+      ],
+      [
+        "privacy-take.mp4",
+        49.5,
+        9
+      ]
+    ],
+    "cues": [
+      {
+        "start": 0.22,
+        "end": 4.953,
+        "ko": "현재 데이터는 서버 메모리에 저장되며 재시작하면 초기화됩니다.",
+        "en": "Data currently lives in server memory\nand resets when the server restarts."
+      },
+      {
+        "start": 7.233,
+        "end": 12.036,
+        "ko": "실사용자 검증과 인구 유출 감소 효과는 아직 확인하지 않았습니다.",
+        "en": "Real-user validation and effects on\nrural population retention remain unproven."
+      }
+    ],
+    "start": 126.119,
+    "duration": 15.0
+  },
+  {
+    "id": "14-outro",
+    "label": "VILLAGE JOBS / BUILD FOR YOUR WORLD",
+    "target": 10,
+    "outro": true,
+    "parts": [
+      [
+        "privacy-take.mp4",
+        72,
+        12
+      ]
+    ],
+    "cues": [
+      {
+        "start": 0.22,
+        "end": 2.727,
+        "ko": "지역에 머물며 일할 기회를 발견하도록.",
+        "en": "Discover an opportunity to work\ncloser to home."
+      },
+      {
+        "start": 5.007,
+        "end": 7.5,
+        "ko": "마을일감이 첫 연결을 돕겠습니다.",
+        "en": "Village Jobs helps start\nthe first conversation."
+      }
+    ],
+    "start": 141.119,
+    "duration": 10.0
+  }
+]

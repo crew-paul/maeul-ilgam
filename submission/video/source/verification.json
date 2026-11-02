@@ -1,0 +1,15 @@
+{
+  "durationSeconds": 151.15,
+  "resolution": "1920x1080",
+  "videoCodec": "H.264",
+  "audioCodec": "AAC 48kHz mono",
+  "spokenLanguage": "Korean (macOS Yuna synthetic voice)",
+  "captionLanguage": "English, burned in and separate SRT",
+  "captionCues": 27,
+  "fullDecode": "passed",
+  "visualReview": "Key frames inspected in opening, text entry, Meta response, review, authentication, application, shared contact, withdrawal, limits, outro; one label moved to avoid the logo",
+  "audioAsrCheck": "Meta transcription returned Korean for both sampled narration chunks; ASR output has recognition errors and is not the subtitle authority",
+  "playerCheck": "Final browser-player UI check unavailable after browser/native-control connection closed; no manual full-playback claim",
+  "bytes": 17590443,
+  "sha256": "206a824a7b82d4ebac4f296ff1712ff4e17d0e5bc06f9875d9d4af134407cb15"
+}

@@ -1,0 +1,32 @@
+{
+  "captureMethod": "Chrome DevTools Protocol Page.startScreenRecording / stopScreenRecording, direct native MP4 stream via CUA",
+  "sourceVideo": "AV1, 1600x900, variable frame rate; no screenshot sequence used",
+  "recordings": [
+    {
+      "file": "creator-take.mp4",
+      "bytes": 981393,
+      "sha256": "9ca8073d85e0fe7d9b421e1b700c054a12132fc1ffcadbea088c8ac79bdc1985"
+    },
+    {
+      "file": "applicant-take.mp4",
+      "bytes": 748049,
+      "sha256": "250e56ae4d21cf3be5af7e208432511cc7aff5652b44b2c49b7cab06b60f0315"
+    },
+    {
+      "file": "contact-take.mp4",
+      "bytes": 127354,
+      "sha256": "796676348538c58b39ff6f980a31294419d39689833159d97432de5197bb9218"
+    },
+    {
+      "file": "withdraw-take.mp4",
+      "bytes": 148418,
+      "sha256": "42b1b233adfa35ed3ece00f16d9fa7b29f22ff7da8e6fc3210fd4f2249194993"
+    },
+    {
+      "file": "privacy-take.mp4",
+      "bytes": 584430,
+      "sha256": "201d6d38b3e83b059c7cce6d89bffcd590dccf6704ea245662ebc21813fc1ba1"
+    }
+  ],
+  "edits": "Jump cuts and timing adjustments to shorten idle waits. App footage is actual interaction; people are separately credited illustrative stock footage."
+}

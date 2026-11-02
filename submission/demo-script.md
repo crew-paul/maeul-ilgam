@@ -1,17 +1,22 @@
-# Three-minute demo recording plan
+# Recorded demo timeline
 
-Status: script only. No video has been recorded.
+Korean narration with English captions. Current local video: `video/village-jobs-demo-ko-en.mp4`, 2:31. This replaces the old script-only and screenshot-based cut.
 
-0:00–0:25 — Introduce a specific fictional farmer and young person; state the rural opportunity-discovery problem without claiming proven population impact.
+| Start | Section |
+|---|---|
+| 0:00 | A LITTLE HELP CAN MATTER |
+| 0:08 | OPPORTUNITY SHOULD BE EASIER TO FIND |
+| 0:16 | VILLAGE JOBS / 마을일감 |
+| 0:24 | 01 / TEXT FIRST. VOICE OPTIONAL. |
+| 0:35 | 02 / REAL META MUSE SPARK RESPONSE |
+| 0:48 | 03 / THE FARMER STAYS IN CONTROL |
+| 1:01 | 04 / REVIEW, THEN PUBLISH |
+| 1:09 | 05 / DISCOVER LOCAL WORK |
+| 1:19 | 06 / LOCAL TEST AUTHENTICATION |
+| 1:28 | 07 / CONTACT SHARING REQUIRES CONSENT |
+| 1:41 | 08 / START A DIRECT CONVERSATION |
+| 1:54 | 09 / WITHDRAWAL HIDES THE CONTACT |
+| 2:06 | 10 / HONEST MVP BOUNDARIES |
+| 2:21 | VILLAGE JOBS / BUILD FOR YOUR WORLD |
 
-0:25–1:05 — Enter or upload the farmer's request. If verified with real credentials, show Meta Voice transcription and Muse Spark draft generation. Otherwise explicitly identify manual demo mode, and do not imply Meta inference occurred.
-
-1:05–1:40 — Show missing location, time and pay. Edit the fields, then approve the card.
-
-1:40–2:10 — Show the young person's view, enter skills and availability, and inspect the information. No automated screening, outreach or employment is implied.
-
-2:10–2:40 — Briefly show architecture and code created during the hackathon, including server-side-only Meta credentials.
-
-2:40–3:00 — State the prototype's limits, what has and has not been validated, and what the next user research would test.
-
-English narration or captions are recommended; the guide does not explicitly state a required language. Link must be accessible to judges.
+Full Korean narration: [narration-ko.txt](video/source/narration-ko.txt). English subtitles: [SRT](video/village-jobs-demo.en.srt). [Credits and verification](video/CREDITS.md). Public upload and event submission remain pending.

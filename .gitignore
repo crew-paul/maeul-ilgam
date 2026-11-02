@@ -9,3 +9,5 @@ dist/
 submission/video/*.mp4
 
 .data/
+submission/video/raw/
+submission/video/*-originals.zip

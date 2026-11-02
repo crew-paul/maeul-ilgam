@@ -4,7 +4,7 @@
 - [ ] Test supported audio and realistic English/Korean inputs; confirm unknown values and corrections.
 - [ ] Replace fictional evidence only with consented, verified research; accurately label demo data.
 - [ ] Confirm public repository contains only authorized code/data and no secrets.
-- [ ] Record the actual 3-minute demo, explaining new hackathon work and the real implementation.
+- [x] Produce an actual app-recording demo under 3 minutes: Korean narration, English captions, real Meta extraction and current workflow; see video/README.md.
 - [ ] Make video accessible without requesting access; verify from a signed-out session.
 - [ ] Deploy if possible and verify live product; include the link in the description or README.
 - [ ] Fill out every required field and review organizer rights checkbox and official rules.

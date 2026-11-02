@@ -1,0 +1,130 @@
+1
+00:00:00,220 --> 00:00:05,945
+Farm work goes beyond harvesting.
+Photography and packing can need extra hands.
+
+2
+00:00:08,220 --> 00:00:12,655
+Young people can struggle to discover
+what work is available nearby.
+
+3
+00:00:13,423 --> 00:00:15,490
+They need a way to find each other.
+
+4
+00:00:16,220 --> 00:00:19,100
+Village Jobs — work close to home.
+
+5
+00:00:19,260 --> 00:00:23,546
+An MVP connecting rural paid tasks
+with people nearby.
+
+6
+00:00:24,276 --> 00:00:29,101
+Text is the default.
+Every field is visible.
+
+7
+00:00:29,796 --> 00:00:34,546
+Voice is optional.
+Posting starts without sign-in.
+
+8
+00:00:35,276 --> 00:00:40,770
+Meta Muse Spark extracts
+the conditions stated in the text.
+
+9
+00:00:41,810 --> 00:00:47,546
+Place, timing, pay and people needed.
+These fields came from the live model response.
+
+10
+00:00:48,276 --> 00:00:51,028
+The model does not make the final decision.
+
+11
+00:00:53,188 --> 00:00:58,356
+The farmer edits the pay and description,
+then checks the date and time.
+
+12
+00:01:01,276 --> 00:01:03,839
+After review, the opportunity is published.
+
+13
+00:01:03,999 --> 00:01:08,609
+The creator can edit or close it
+from the same browser.
+
+14
+00:01:09,339 --> 00:01:12,836
+A young person searches by town
+and opens the details.
+
+15
+00:01:14,731 --> 00:01:18,609
+Place, time and pay are visible
+without sign-in.
+
+16
+00:01:19,339 --> 00:01:21,603
+Applying requires verification.
+
+17
+00:01:23,486 --> 00:01:27,609
+This recording uses a local test code.
+No email was sent.
+
+18
+00:01:28,339 --> 00:01:32,566
+The applicant adds a name and note,
+then chooses a phone number or email.
+
+19
+00:01:34,726 --> 00:01:38,582
+Sharing that contact with this farmer
+requires explicit consent.
+
+20
+00:01:41,339 --> 00:01:45,009
+The farmer sees the shared contact
+inside My jobs.
+
+21
+00:01:47,169 --> 00:01:51,674
+They arrange the work and payment directly.
+The app does not process payments.
+
+22
+00:01:54,339 --> 00:01:58,519
+Withdrawing hides the contact
+from subsequent farmer requests.
+
+23
+00:02:00,679 --> 00:02:04,384
+It cannot take back information
+the farmer has already seen.
+
+24
+00:02:06,339 --> 00:02:11,191
+Data currently lives in server memory
+and resets when the server restarts.
+
+25
+00:02:13,351 --> 00:02:18,275
+Real-user validation and effects on
+rural population retention remain unproven.
+
+26
+00:02:21,339 --> 00:02:23,966
+Discover an opportunity to work
+closer to home.
+
+27
+00:02:26,126 --> 00:02:28,739
+Village Jobs helps start
+the first conversation.
+
