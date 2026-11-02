@@ -1,0 +1,58 @@
+{
+  "before": {
+    "demoFramesScanned": 2400,
+    "defectFrames": [
+      {
+        "demoFrame": 259,
+        "timeSeconds": 41.033333
+      },
+      {
+        "demoFrame": 648,
+        "timeSeconds": 54.0
+      },
+      {
+        "demoFrame": 649,
+        "timeSeconds": 54.033333
+      },
+      {
+        "demoFrame": 650,
+        "timeSeconds": 54.066667
+      },
+      {
+        "demoFrame": 701,
+        "timeSeconds": 55.766667
+      },
+      {
+        "demoFrame": 822,
+        "timeSeconds": 59.8
+      },
+      {
+        "demoFrame": 866,
+        "timeSeconds": 61.266667
+      },
+      {
+        "demoFrame": 1003,
+        "timeSeconds": 65.833333
+      },
+      {
+        "demoFrame": 1065,
+        "timeSeconds": 67.9
+      },
+      {
+        "demoFrame": 1290,
+        "timeSeconds": 75.4
+      },
+      {
+        "demoFrame": 1591,
+        "timeSeconds": 85.433333
+      }
+    ]
+  },
+  "after": {
+    "demoFramesScanned": 2400,
+    "defectFrames": []
+  },
+  "reviewedSourceFramesExcluded": 21,
+  "method": "Detect the observed half-width scrollbar plus blank right-half capture geometry on every demo frame. This is a targeted regression check, not a universal visual-quality guarantee.",
+  "visualReview": "All 21 excluded source frames reviewed; before/after and repaired neighboring frames compared at 41.033, 55.767, 65.833 and 85.433 seconds."
+}

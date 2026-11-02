@@ -1,0 +1,131 @@
+1
+00:00:00,000 --> 00:00:04,000
+She has grown a beautiful harvest.
+Now she wants to sell it online.
+
+2
+00:00:04,000 --> 00:00:08,000
+The gift boxes are ready.
+But reaching buyers is unfamiliar territory.
+
+3
+00:00:08,000 --> 00:00:12,000
+Where should she start?
+She needs help taking product photos.
+
+4
+00:00:12,000 --> 00:00:16,000
+Nearby, a young resident has
+a slow afternoon with nothing planned.
+
+5
+00:00:16,000 --> 00:00:20,000
+He has time and a camera.
+He just has not found a local opportunity.
+
+6
+00:00:20,000 --> 00:00:24,000
+A paid photography task nearby
+gives him a reason to get involved.
+
+7
+00:00:24,000 --> 00:00:28,000
+Village Jobs helps them connect
+and arrange the work directly.
+
+8
+00:00:28,000 --> 00:00:32,400
+A useful first step toward selling her harvest.
+Here is how the connection works.
+
+9
+00:00:32,400 --> 00:00:34,900
+One local task. One useful connection.
+
+10
+00:00:34,900 --> 00:00:37,400
+English first. Korean available.
+
+11
+00:00:37,400 --> 00:00:40,400
+Post a task without signing in.
+
+12
+00:00:40,400 --> 00:00:43,400
+Text first. Voice is optional.
+
+13
+00:00:43,400 --> 00:00:47,900
+Meta Muse Spark extracts the task conditions.
+
+14
+00:00:47,900 --> 00:00:52,400
+Place, time, pay and people needed.
+
+15
+00:00:52,400 --> 00:00:56,400
+The farmer stays in control.
+
+16
+00:00:56,400 --> 00:01:00,400
+Edit the pay and description, then review.
+
+17
+00:01:00,400 --> 00:01:02,400
+Review, then publish.
+
+18
+00:01:02,400 --> 00:01:04,400
+Edit or close it from the same browser.
+
+19
+00:01:04,400 --> 00:01:07,400
+Search by town and open the details.
+
+20
+00:01:07,400 --> 00:01:10,400
+See the place, time and pay before signing in.
+
+21
+00:01:10,400 --> 00:01:15,400
+Verify before applying.
+Local test code only; no email sent.
+
+22
+00:01:15,400 --> 00:01:19,400
+Add a name, note and contact.
+
+23
+00:01:19,400 --> 00:01:23,400
+Explicit consent is required to share it.
+
+24
+00:01:23,400 --> 00:01:27,400
+The farmer sees the shared contact in My jobs.
+
+25
+00:01:27,400 --> 00:01:31,400
+They arrange the work and payment directly.
+
+26
+00:01:31,400 --> 00:01:34,900
+Withdrawal hides the shared contact.
+
+27
+00:01:34,900 --> 00:01:38,400
+Already-seen information cannot be taken back.
+
+28
+00:01:38,400 --> 00:01:42,900
+Memory-only data resets on server restart.
+
+29
+00:01:42,900 --> 00:01:47,400
+Real-user validation and retention impact
+remain unproven.
+
+30
+00:01:47,400 --> 00:01:52,400
+Village Jobs.
+A local opportunity starts with a conversation.
+

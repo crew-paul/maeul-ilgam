@@ -4,11 +4,13 @@ Usage: python3 render.py --raw-dir /tmp/village-film --ffmpeg /path/to/ffmpeg
 Meta-generated fictional Korean photo story, then actual native product video.
 Smooth pan/zoom and dissolves; continuous English captions; no audio. Rendering makes no API calls.
 """
-import argparse,json,subprocess,re,wave,shutil
+import argparse,json,subprocess,re,wave,shutil,sys
 from pathlib import Path
 p=argparse.ArgumentParser();p.add_argument('--reuse-intro',action='store_true',help='Reuse the unchanged existing photo-story intro');p.add_argument('--only',help='Render only these comma-separated scene ids, then rebuild the master');p.add_argument('--raw-dir',type=Path,required=True);p.add_argument('--ffmpeg',default=shutil.which('ffmpeg'));p.add_argument('--output-dir',type=Path,default=Path(__file__).resolve().parents[2]);args=p.parse_args()
 assert args.ffmpeg,'FFmpeg is required';ff=args.ffmpeg;raw=args.raw_dir;out=args.output_dir;work=raw/'edit-photo-story';work.mkdir(exist_ok=True);out.mkdir(exist_ok=True)
 scenes=json.loads(Path(__file__).with_name('storyboard.json').read_text())
+cleaned=out/'raw'/'cleaned'
+subprocess.run([sys.executable,str(Path(__file__).with_name('repair_sources.py')),'--raw-dir',str(raw),'--cleaned-dir',str(cleaned),'--ffmpeg',ff],check=True)
 def run(cmd):
  result=subprocess.run(cmd,stdout=subprocess.DEVNULL,stderr=subprocess.PIPE)
  if result.returncode:print(result.stderr.decode()[-6000:]);result.check_returncode()
@@ -85,10 +87,10 @@ for idx,s in enumerate(scenes):
  # Cut native video sources, concatenate motion, and retime only for editorial pacing.
  cmd=[ff,'-hide_banner','-loglevel','error'];filters=[];raw_length=sum(part[2] for part in s['parts'])
  for i,(file,start,length) in enumerate(s['parts']):
-  cmd+=['-ss',str(start),'-t',str(length),'-i',str(raw/file)]
+  cmd+=['-ss',str(start),'-t',str(length),'-i',str(cleaned/file)]
   filters.append(f'[{i}:v]setpts=PTS-STARTPTS,fps=30,scale=1600:900,setsar=1[p{i}]')
  merged=''.join(f'[p{i}]' for i in range(len(s['parts'])))
- filters.append(f'{merged}concat=n={len(s["parts"])}:v=1:a=0,setpts={duration/raw_length:.9f}*PTS,fps=30,trim=duration={duration:.4f}[joined]')
+ filters.append(f'{merged}concat=n={len(s["parts"])}:v=1:a=0,setpts={duration/raw_length:.9f}*PTS,fps=30,tpad=stop_mode=clone:stop_duration=1,trim=end_frame={round(duration*30)},setpts=N/(30*TB)[joined]')
  if s.get('stock'):filters.append('[joined]scale=1920:1080,crop=1920:1080,drawbox=x=0:y=0:w=iw:h=135:color=0x13261a@0.75:t=fill[canvas]')
  else:filters.append('[joined]pad=1920:1080:160:46:color=0x13261a[canvas]')
  if s.get('outro'):filters.append('[canvas]drawbox=x=0:y=0:w=iw:h=946:color=0x13261a@0.78:t=fill[dim]');canvas='dim'
@@ -101,10 +103,10 @@ for idx,s in enumerate(scenes):
  except subprocess.CalledProcessError as e:print(e.stderr.decode()[-8000:]);raise
  timeline.append({**s,'start':round(elapsed,3),'duration':round(duration,3),'cues':[{'start':round(a,3),'end':round(b,3),'en':en} for a,b,en in local]});elapsed+=duration;print(f'{s["id"]}: {duration:.2f}s / total {elapsed:.2f}s',flush=True)
 assert elapsed<=180,f'Runtime too long: {elapsed:.2f}'
-concat=work/'concat.txt';concat.write_text(f"file '{intro}'\n"+''.join(f"file '{work/(s['id']+'.mp4')}'\n" for s in scenes))
-master=out/'village-jobs-photo-story-fast-en.mp4'
+concat=work/'concat.txt';concat.write_text(f"file '{intro}'\nduration {intro_duration}\n"+''.join(f"file '{work/(s['id']+'.mp4')}'\nduration {s['target']}\n" for s in scenes))
+master=out/'village-jobs-photo-story-fixed-en.mp4'
 run([ff,'-hide_banner','-loglevel','error','-f','concat','-safe','0','-i',str(concat),'-c','copy','-metadata','title=Village Jobs — Korean photo story and live demo, English subtitles','-metadata','comment=Meta Muse Image fictional Korean photo story, animated stills, followed by native browser footage. No narration. Test authentication.','-movflags','+faststart','-y',str(master)])
-(out/'village-jobs-photo-story-fast.en.srt').write_text(''.join(f'{i+1}\n{srt_time(a)} --> {srt_time(b)}\n{en}\n\n' for i,(a,b,en) in enumerate(global_cues)))
+(out/'village-jobs-photo-story-fixed.en.srt').write_text(''.join(f'{i+1}\n{srt_time(a)} --> {srt_time(b)}\n{en}\n\n' for i,(a,b,en) in enumerate(global_cues)))
 (out/'source'/'photo-story'/'edit-timeline.json').write_text(json.dumps(timeline,ensure_ascii=False,indent=2)+'\n')
 
 print(json.dumps({'output':str(master),'duration':elapsed,'bytes':master.stat().st_size}))

@@ -54,7 +54,7 @@ The server enforces ownership, required fields, future dates, version conflicts,
 
 ## Specification and submission
 
-[SDD v3](specs/README.md) is the current source of truth. Each feature has plan, requirements and validation documents. [Submission materials](submission/) include draft form answers and the demo script. A 1:52 silent demo with continuous English captions is available locally at `submission/video/village-jobs-photo-story-fast-en.mp4`. Eight animated Meta-generated photos tell a fictional Korean farmer/youth story, followed by actual native browser recordings of the current workflow; source and verification details are in `submission/video/`. Video upload is still pending. No employment or population-retention outcome has been measured, and no older-adult user study has been completed.
+[SDD v3](specs/README.md) is the current source of truth. Each feature has plan, requirements and validation documents. [Submission materials](submission/) include draft form answers and the demo script. A 1:52 silent demo with continuous English captions is available locally at `submission/video/village-jobs-photo-story-fixed-en.mp4`. Eight animated Meta-generated photos tell a fictional Korean farmer/youth story, followed by actual native browser recordings of the current workflow; source and verification details are in `submission/video/`. Video upload is still pending. No employment or population-retention outcome has been measured, and no older-adult user study has been completed.
 
 ## Design credit
 

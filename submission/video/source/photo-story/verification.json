@@ -50,12 +50,13 @@
   "generation": "Meta Muse Image; eight successful image outputs; two initial HTTP 400 size-validation failures",
   "estimatedNewImageCostUsd": 0.08,
   "costNote": "Published unit-price estimate, not a verified billing statement; no external paid services",
-  "visualReview": "Edited Meta extraction, published job, test-code verification, shared contact and outro key frames inspected. The first 972 decoded frames match the previously verified photo intro exactly. Full manual playback not claimed.",
+  "visualReview": "All 21 reviewed defective source frames show the half-size capture shape. Before/after and adjacent repaired frames inspected at text entry, review, discovery and shared-contact sections. Capture-shape regression checks all 2400 demo frames; no full manual playback claim.",
   "appDemoSeconds": 80,
   "previousAppDemoSeconds": 137,
   "newGenerationCallsThisRevision": 0,
-  "bytes": 17112700,
-  "sha256": "4f6875022f15536c4af235a68324a8cb6ee94644c7c5ca17af673dfec8f25d64",
+  "incrementalGenerationCostThisRevisionUsd": 0,
+  "bytes": 17002956,
+  "sha256": "3c6825721ae514d22983522940a7f35a702116f3b6968ad15b46c1d808e4c08b",
   "assets": [
     {
       "file": "raw/photo-story/01-harvest.png",
@@ -107,5 +108,5 @@
     }
   ],
   "publicUpload": "not performed",
-  "incrementalGenerationCostThisRevisionUsd": 0
+  "captureRepairCheck": "capture-repair-check.json"
 }

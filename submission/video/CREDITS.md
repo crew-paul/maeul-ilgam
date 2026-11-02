@@ -1,6 +1,6 @@
 # Current film credits
 
-`village-jobs-photo-story-fast-en.mp4` combines an illustrated fictional story and an actual app demo.
+`village-jobs-photo-story-fixed-en.mp4` combines an illustrated fictional story and an actual app demo.
 
 ## Korean character photographs
 
@@ -10,7 +10,7 @@ FFmpeg animates the still photographs through eased pan/zoom and seven 0.4-secon
 
 ## Actual product footage
 
-Five continuous native browser MP4 recordings captured with Chrome's `Page.startScreenRecording`. Original provenance and hashes remain in `source/capture-provenance.json`. The original files are in the source archive. These show real app interactions and a live Meta Muse Spark extraction response; waits and pacing were edited.
+Five continuous native browser MP4 recordings captured with Chrome's `Page.startScreenRecording`. Original provenance and hashes remain in `source/capture-provenance.json`. The original files are in the source archive. These show real app interactions and a live Meta Muse Spark extraction response; waits and pacing were edited. Twenty-one visually reviewed half-size capture glitches are excluded before frame-rate conversion; neighboring original frames cover those short intervals without changing the timeline. Original files remain intact. Frame indices, timestamps and source hashes are recorded in `source/photo-story/source-frame-repairs.json`.
 
 Names, work requests and contacts are fictional. Authentication uses a local test code and does not send email. The creator and applicant use separate hosts/cookies. The app facilitates contact; participants arrange work and payment directly. Data are in server memory and reset on restart.
 

@@ -3,14 +3,14 @@
 import argparse,subprocess,re,json,hashlib
 from pathlib import Path
 p=argparse.ArgumentParser();p.add_argument('--baseline',type=Path,help='Previously verified movie whose unchanged intro will be compared');p.add_argument('--ffmpeg',required=True);a=p.parse_args();ff=a.ffmpeg
-out=Path(__file__).resolve().parents[2];movie=out/'village-jobs-photo-story-fast-en.mp4';folder=Path(__file__).resolve().parent
+out=Path(__file__).resolve().parents[2];movie=out/'village-jobs-photo-story-fixed-en.mp4';folder=Path(__file__).resolve().parent
 info=subprocess.run([ff,'-hide_banner','-i',str(movie)],capture_output=True,text=True).stderr
 assert 'Audio:' not in info, 'Unexpected audio stream'
 assert '1920x1080' in info and 'h264' in info, info
 m=re.search(r'Duration: (\d+):(\d+):(\d+\.\d+)',info);assert m,info
 duration=int(m[1])*3600+int(m[2])*60+float(m[3]);assert duration<=180
 subprocess.run([ff,'-v','error','-i',str(movie),'-f','null','-'],check=True,capture_output=True)
-srt=(out/'village-jobs-photo-story-fast.en.srt').read_text();assert srt.isascii()
+srt=(out/'village-jobs-photo-story-fixed.en.srt').read_text();assert srt.isascii()
 def sec(t):
  h,m,s=t.split(':');return int(h)*3600+int(m)*60+float(s.replace(',','.'))
 ranges=[(sec(x),sec(y)) for x,y in re.findall(r'([\d:,]+) --> ([\d:,]+)',srt)]

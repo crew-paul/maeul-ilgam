@@ -1,6 +1,6 @@
 # Current demo — photo story followed by actual product video
 
-Local movie: `video/village-jobs-photo-story-fast-en.mp4`, approximately 1:52, 1920×1080. Silent throughout, with 30 continuous English caption cues burned into the video and also provided as [SRT](video/village-jobs-photo-story-fast.en.srt).
+Local movie: `video/village-jobs-photo-story-fixed-en.mp4`, approximately 1:52, 1920×1080. Silent throughout, with 30 continuous English caption cues burned into the video and also provided as [SRT](video/village-jobs-photo-story-fixed.en.srt).
 
 The first 32.4 seconds use eight Meta Muse Image photographs of fictional Korean characters. Eased pan/zoom and seven dissolves keep the visual sequence moving. An older farmer wants to sell strawberries but needs product photos; a young person with a slow countryside afternoon finds a local task; they meet and photograph the produce. This illustrates the intended use, not a verified customer or sales result. The remaining 80 seconds show actual browser-recorded app interactions.
 
