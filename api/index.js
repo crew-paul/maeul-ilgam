@@ -15,6 +15,14 @@ const application = openDatabase().then(async db => {
 export default async function handler(req, res) {
   try {
     const app = await application;
+    // Restore the public API path passed by the Vercel rewrite.
+    const incoming = new URL(req.url, 'http://localhost');
+    const route = incoming.searchParams.get('__route');
+    if (route !== null) {
+      incoming.searchParams.delete('__route');
+      const query = incoming.searchParams.toString();
+      req.url = `/api/${route}${query ? `?${query}` : ''}`;
+    }
     return app(req, res);
   } catch (error) {
     console.error('API initialization failed', error);
