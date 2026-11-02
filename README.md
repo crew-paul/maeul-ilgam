@@ -1,6 +1,6 @@
 # Ma-eul Ilgam
 
-> **Service specification v2:** [specs/README.md](specs/README.md) defines the actual service target, user journeys, direct-payment process, permissions, data/API contracts, operations and release gates. The current application below is still the initial in-session prototype. See [implementation status](specs/release/implementation-status.md) for the gaps. Specifying a feature does not mean it has been implemented or verified.
+> **Hackathon specification v3:** [specs/README.md](specs/README.md) defines the focused 7-screen product: senior-friendly voice job creation, persistent publishing and discovery, and private phone/email interest sharing. Payment is direct between people. The current app is still an initial prototype; see [implementation status](specs/release/implementation-status.md).
 
 A bilingual prototype for turning a rural farmer's request into a reviewable local work opportunity. English is the default interface; 한국어 is available from the language switcher.
 
