@@ -1,3 +1,26 @@
+# Video revision — Meta credit budget only
+
+**Latest review cut:** `village-jobs-product-silent-en.mp4` — silent, English captions, actual product footage only. **The requested Korean farmer/youth story scenes are still missing. This is not the completed story film or a submission-ready final.**
+
+The revised cut removes narration and the unrelated Western stock footage. A fictional strawberry-product photography task connects the caption setup to the actual app recording. No audio track, external video service, paid stock, or new model call is used to make this cut.
+
+Budget is limited to the remaining portion of the originally granted **$150 Meta Model API credits**. No additional payment, top-up, vidIQ credits, or paid third-party generation is authorized. The remaining Meta balance was not verified. The account model list inspected during production had no video-generation model.
+
+- `village-jobs-product-silent-en.mp4` — latest product-only review cut.
+- `village-jobs-product-silent.en.srt` — English subtitles for this cut.
+- `source/korean-story/` — silent renderer, storyboard, timeline and verification.
+- `village-jobs-recording-originals.zip` — unedited native browser recordings.
+
+Rebuild with FFmpeg with libass (no API call):
+
+```sh
+python3 submission/video/source/korean-story/render.py --raw-dir /path/to/captured-media --ffmpeg /path/to/ffmpeg
+```
+
+The directory needs the five take MP4s listed in the storyboard. Rendered media remain local and ignored by Git. Public upload and hackathon submission are pending.
+
+## Previous revision, retained for reference
+
 # Recorded demo — Korean narration, English captions
 
 **Current movie:** `village-jobs-demo-ko-en.mp4` · **2 minutes 31 seconds** · 1920×1080 H.264/AAC.

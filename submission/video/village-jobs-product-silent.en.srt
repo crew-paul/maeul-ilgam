@@ -1,0 +1,117 @@
+1
+00:00:00,200 --> 00:00:04,970
+A farmer wants to sell strawberry gift boxes online.
+The first task: find someone to photograph them.
+
+2
+00:00:05,200 --> 00:00:09,970
+Village Jobs connects paid local tasks
+with people nearby.
+
+3
+00:00:10,200 --> 00:00:15,470
+Text is the default.
+Every field is visible.
+
+4
+00:00:15,700 --> 00:00:20,970
+Voice is optional.
+Posting starts without sign-in.
+
+5
+00:00:21,200 --> 00:00:27,470
+Meta Muse Spark extracts
+the conditions stated in the text.
+
+6
+00:00:27,700 --> 00:00:33,970
+Place, timing, pay and people needed.
+These fields came from the live model response.
+
+7
+00:00:34,200 --> 00:00:40,470
+The model does not make the final decision.
+
+8
+00:00:40,700 --> 00:00:46,970
+The farmer edits the pay and description,
+then checks the date and time.
+
+9
+00:00:47,200 --> 00:00:50,970
+After review, the opportunity is published.
+
+10
+00:00:51,200 --> 00:00:54,970
+The creator can edit or close it
+from the same browser.
+
+11
+00:00:55,200 --> 00:00:59,970
+A young person searches by town
+and opens the details.
+
+12
+00:01:00,200 --> 00:01:04,970
+Place, time and pay are visible
+without sign-in.
+
+13
+00:01:05,200 --> 00:01:09,470
+Applying requires verification.
+
+14
+00:01:09,700 --> 00:01:13,970
+This recording uses a local test code.
+No email was sent.
+
+15
+00:01:14,200 --> 00:01:20,470
+The applicant adds a name and note,
+then chooses a phone number or email.
+
+16
+00:01:20,700 --> 00:01:26,970
+Sharing that contact with this farmer
+requires explicit consent.
+
+17
+00:01:27,200 --> 00:01:33,470
+The farmer sees the shared contact
+inside My jobs.
+
+18
+00:01:33,700 --> 00:01:39,970
+They arrange the work and payment directly.
+The app does not process payments.
+
+19
+00:01:40,200 --> 00:01:45,970
+Withdrawing hides the contact
+from subsequent farmer requests.
+
+20
+00:01:46,200 --> 00:01:51,970
+It cannot take back information
+the farmer has already seen.
+
+21
+00:01:52,200 --> 00:01:59,470
+Data currently lives in server memory
+and resets when the server restarts.
+
+22
+00:01:59,700 --> 00:02:06,970
+Real-user validation and effects on
+rural population retention remain unproven.
+
+23
+00:02:07,200 --> 00:02:11,970
+Discover an opportunity to work
+closer to home.
+
+24
+00:02:12,200 --> 00:02:16,970
+Village Jobs helps start
+the first conversation.
+

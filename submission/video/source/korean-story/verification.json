@@ -1,0 +1,18 @@
+{
+  "durationSeconds": 137,
+  "resolution": "1920x1080",
+  "videoCodec": "H.264",
+  "audioStreams": 0,
+  "captionLanguage": "English, burned in and separate SRT",
+  "captionCues": 24,
+  "fullDecode": "passed",
+  "source": "Actual native browser video only; no character footage",
+  "koreanCharacterStory": "NOT PRODUCED: no video-generation model in inspected Meta account model list; paid external tools not authorized",
+  "incrementalGenerationCalls": 0,
+  "incrementalExternalPaidCalls": 0,
+  "budget": "Remaining originally granted Meta Model API $150 credits only; balance not verified",
+  "bytes": 4125053,
+  "sha256": "df92d93d424c4257f61f3c9a1cd66e271de8e15f1ed5e14296e2a75e59748592",
+  "visualReview": "Opening, Meta extraction, local-test authentication and outro key frames inspected; English captions readable and within frame. No full manual playback claimed.",
+  "publicUpload": "pending"
+}

@@ -1,3 +1,13 @@
+# Latest silent product-footage cut
+
+`village-jobs-product-silent-en.mp4` contains only the five original continuous native browser MP4 recordings, English captions, and editorial titles. No stock character footage, synthetic narration, music, or audio track is included. No external generation service or model call was used for this revision.
+
+The opening caption is a fictional strawberry-product photography scenario, not an interview, documented customer outcome, or demonstration of a sales platform. The requested Korean farmer and relaxed countryside youth scenes remain unproduced. Do not present this product-only cut as a finished story film.
+
+Local authentication uses an on-screen test code and sends no email. All contacts are fictional. The previous source provenance remains in `source/capture-provenance.json`; new output checks are in `source/korean-story/verification.json`.
+
+## Previous narrated cut — archived credits
+
 # Video sources and production
 
 Final movie: `village-jobs-demo-ko-en.mp4` (2:31, 1920×1080).

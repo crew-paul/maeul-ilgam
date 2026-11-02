@@ -1,0 +1,226 @@
+[
+  {
+    "id": "03-home",
+    "label": "VILLAGE JOBS / FICTIONAL PRODUCT-PHOTOGRAPHY SCENARIO",
+    "target": 10,
+    "parts": [
+      [
+        "creator-take.mp4",
+        0,
+        5.4
+      ]
+    ],
+    "cues": [
+      "A farmer wants to sell strawberry gift boxes online.\nThe first task: find someone to photograph them.",
+      "Village Jobs connects paid local tasks\nwith people nearby."
+    ]
+  },
+  {
+    "id": "04-text",
+    "label": "01 / TEXT FIRST. VOICE OPTIONAL.",
+    "target": 11,
+    "parts": [
+      [
+        "creator-take.mp4",
+        15.8,
+        12
+      ]
+    ],
+    "cues": [
+      "Text is the default.\nEvery field is visible.",
+      "Voice is optional.\nPosting starts without sign-in."
+    ]
+  },
+  {
+    "id": "05-meta",
+    "label": "02 / REAL META MUSE SPARK RESPONSE",
+    "target": 13,
+    "parts": [
+      [
+        "creator-take.mp4",
+        32.5,
+        16
+      ]
+    ],
+    "cues": [
+      "Meta Muse Spark extracts\nthe conditions stated in the text.",
+      "Place, timing, pay and people needed.\nThese fields came from the live model response."
+    ]
+  },
+  {
+    "id": "06-review",
+    "label": "03 / THE FARMER STAYS IN CONTROL",
+    "target": 13,
+    "parts": [
+      [
+        "creator-take.mp4",
+        56.8,
+        10.5
+      ],
+      [
+        "creator-take.mp4",
+        84.6,
+        4.5
+      ]
+    ],
+    "cues": [
+      "The model does not make the final decision.",
+      "The farmer edits the pay and description,\nthen checks the date and time."
+    ]
+  },
+  {
+    "id": "07-publish",
+    "label": "04 / REVIEW, THEN PUBLISH",
+    "target": 8,
+    "parts": [
+      [
+        "creator-take.mp4",
+        92.7,
+        4
+      ],
+      [
+        "creator-take.mp4",
+        101,
+        5
+      ]
+    ],
+    "cues": [
+      "After review, the opportunity is published.",
+      "The creator can edit or close it\nfrom the same browser."
+    ]
+  },
+  {
+    "id": "08-discover",
+    "label": "05 / DISCOVER LOCAL WORK",
+    "target": 10,
+    "parts": [
+      [
+        "applicant-take.mp4",
+        0,
+        9.6
+      ]
+    ],
+    "cues": [
+      "A young person searches by town\nand opens the details.",
+      "Place, time and pay are visible\nwithout sign-in."
+    ]
+  },
+  {
+    "id": "09-auth",
+    "label": "06 / LOCAL TEST AUTHENTICATION",
+    "target": 9,
+    "auth": true,
+    "parts": [
+      [
+        "applicant-take.mp4",
+        9.6,
+        14
+      ]
+    ],
+    "cues": [
+      "Applying requires verification.",
+      "This recording uses a local test code.\nNo email was sent."
+    ]
+  },
+  {
+    "id": "10-apply",
+    "label": "07 / CONTACT SHARING REQUIRES CONSENT",
+    "target": 13,
+    "parts": [
+      [
+        "applicant-take.mp4",
+        23.4,
+        5
+      ],
+      [
+        "applicant-take.mp4",
+        43,
+        10
+      ]
+    ],
+    "cues": [
+      "The applicant adds a name and note,\nthen chooses a phone number or email.",
+      "Sharing that contact with this farmer\nrequires explicit consent."
+    ]
+  },
+  {
+    "id": "11-contact",
+    "label": "08 / START A DIRECT CONVERSATION",
+    "target": 13,
+    "parts": [
+      [
+        "contact-take.mp4",
+        0,
+        15
+      ]
+    ],
+    "cues": [
+      "The farmer sees the shared contact\ninside My jobs.",
+      "They arrange the work and payment directly.\nThe app does not process payments."
+    ]
+  },
+  {
+    "id": "12-withdraw",
+    "label": "09 / WITHDRAWAL HIDES THE CONTACT",
+    "target": 12,
+    "parts": [
+      [
+        "withdraw-take.mp4",
+        0,
+        2
+      ],
+      [
+        "withdraw-take.mp4",
+        8.5,
+        6
+      ],
+      [
+        "privacy-take.mp4",
+        0,
+        5
+      ]
+    ],
+    "cues": [
+      "Withdrawing hides the contact\nfrom subsequent farmer requests.",
+      "It cannot take back information\nthe farmer has already seen."
+    ]
+  },
+  {
+    "id": "13-limits",
+    "label": "10 / HONEST MVP BOUNDARIES",
+    "target": 15,
+    "parts": [
+      [
+        "privacy-take.mp4",
+        41,
+        6
+      ],
+      [
+        "privacy-take.mp4",
+        49.5,
+        9
+      ]
+    ],
+    "cues": [
+      "Data currently lives in server memory\nand resets when the server restarts.",
+      "Real-user validation and effects on\nrural population retention remain unproven."
+    ]
+  },
+  {
+    "id": "14-outro",
+    "label": "VILLAGE JOBS / BUILD FOR YOUR WORLD",
+    "target": 10,
+    "outro": true,
+    "parts": [
+      [
+        "privacy-take.mp4",
+        72,
+        12
+      ]
+    ],
+    "cues": [
+      "Discover an opportunity to work\ncloser to home.",
+      "Village Jobs helps start\nthe first conversation."
+    ]
+  }
+]
