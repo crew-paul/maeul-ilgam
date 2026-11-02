@@ -1,8 +1,23 @@
-# Roadmap
+# 구현 로드맵 v2
 
-1. Constitution and the core opportunity workflow specification.
-2. Implement the bilingual farmer-to-youth workflow and transparent simulated mode.
-3. Integrate Meta transcription and structured extraction on the server; verify live when credentials are available.
-4. Create the submission package: README, draft answers, demo script and verification checklist.
-5. Validate UI, build and targeted API behavior; create public repository and prepare delivery.
-6. Pending real-world interviews, live credentials, accessible deployment and final video recording: update evidence and final submission.
+상태는 `미착수 → 명세 확정 → 구현 중 → 검증 중 → 완료`. 완료는 해당 작업 검증 통과와 커밋이 있을 때만 사용한다. 아래 작업은 2026-11-02 기준 모두 명세 초안 상태이며 코드 완료를 뜻하지 않는다.
+
+| 작업 | 범위 | 선행 조건 | 검증 |
+|---|---|---|---|
+| T01 service-foundation | 도메인 계약·PostgreSQL·마이그레이션·환경·헬스체크·스테이징 골격 | 없음 | 재시작 영속성·마이그레이션·키 비노출 |
+| T02 service-identity | 이메일 인증·세션·역할·프로필·농가 확인 | T01 | A01,A02,A06,A15 |
+| T03 service-publishing | AI/수동 작성·임시저장·출력 검증·필수 조건·revision·게시 검토 | T01,T02 | A03,A04,A05,A09 |
+| T04 service-discovery | 공개 목록·검색·필터·상세·모바일·접근성 | T03 | A05,A13,A14 |
+| T05 service-applications | 신청·철회·문의·대화·제안·수락·정원·알림 | T02–T04 | A06–A10 |
+| T06 service-work-payment | 확정 조건·작업·완료·취소·보수 계산 근거·직접 지급 확인·이견 | T05 | A09,A11,A12 |
+| T07 service-operations | 신고·정지·감사·삭제·백업·모니터링·운영 대시보드 | T01–T06 | A12,A15,A16 |
+| T08 service-launch | 전체 영/한·기기·실사용 점검·성능·배포·정책·운영 준비 | T01–T07 | 출시 G1–G4 |
+| T09 service-submission | 실제 흐름 영상·호스팅·README·폼 설명·신규 기여 정리 | 검증된 기능 | 제출 게이트 |
+
+## 각 작업의 문서
+
+각 `specs/features/service-*/` 폴더에 plan(범위·순서·위험), requirements(식별 가능한 동작·오류·권한), validation(실행할 검사·관찰 결과·남은 일)을 둔다. 현재 문서는 실행 전 명세이므로 결과 칸은 비워 둔다.
+
+## 출시 전 외부 결정
+
+첫 시·군, 운영 주체·연락처, 로그인 이메일 공급자, 호스팅·DB·저장소, 운영 정책/보관 기간을 확정한다. 직접 지급은 사용자 확정 사항이다. 이 결정이 없어도 도메인 구현은 진행할 수 있으나 실제 사용자를 받는 출시는 보류한다.

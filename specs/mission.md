@@ -1,7 +1,19 @@
-# Mission
+# Mission v2
 
-Ma-eul Ilgam helps rural farmers describe paid work and helps local young people review opportunities. The first prototype tests whether a conversation can turn an informal request into a clear, farmer-reviewed work card. It does not claim to reduce out-migration, guarantee employment, or replace human judgment.
+## 왜 만드는가
 
-Primary users: farmers who prefer speaking and local young people seeking work. Demonstration profiles and opportunities are fictional until verified with consent. English is the default interface; Korean is available throughout the workflow. User-provided content stays in its original language.
+농촌에서 필요한 업무가 있어도 농가가 일감의 범위·보수·일정을 정리해 알리기 어렵고, 지역에서 일하고 싶은 청년은 기회와 조건을 발견하기 어렵다. 마을일감은 양측이 같은 정보를 보고 대화와 신청을 시작하고 작업을 끝낼 수 있게 한다.
 
-Success: a farmer can enter a request, review and correct missing fields, approve a card, and a young person can inspect it against their own availability. No candidate is automatically rejected or ranked.
+농촌 인구 유지는 장기 목표다. 출시 성과는 게시 성공, 실제 신청·응답, 양측 조건 확인과 완료 경험으로 측정하며, 사용 전부터 인구 감소나 소득 증가 효과를 주장하지 않는다.
+
+## 사용자
+
+- 농가: 본인 농가의 유료 일감을 등록하고 문의·신청을 확인하며 참여자를 직접 선택한다.
+- 참여자: 지역 일감을 탐색하고 조건을 확인한 뒤 문의·신청한다. 청년을 중심으로 설계하며 민감한 개인정보를 AI로 평가하지 않는다.
+- 운영자: 농가 확인, 일감 검토, 신고 처리, 중단·복구, 이용자 지원을 담당한다.
+
+## 성공한 한 건
+
+확인된 농가가 완성된 일감을 게시한다 → 다른 계정의 참여자가 발견하고 신청한다 → 농가가 참여를 제안한다 → 참여자가 조건을 확인한다 → 작업한다 → 양측이 완료를 확인한다 → 당사자가 직접 지급한 보수의 확인 기록을 남긴다.
+
+중간 취소, 응답 지연, 조건 변경, 지급 이견도 정상적인 서비스 상태로 처리한다.

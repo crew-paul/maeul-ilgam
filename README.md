@@ -1,5 +1,7 @@
 # Ma-eul Ilgam
 
+> **Service specification v2:** [specs/README.md](specs/README.md) defines the actual service target, user journeys, direct-payment process, permissions, data/API contracts, operations and release gates. The current application below is still the initial in-session prototype. See [implementation status](specs/release/implementation-status.md) for the gaps. Specifying a feature does not mean it has been implemented or verified.
+
 A bilingual prototype for turning a rural farmer's request into a reviewable local work opportunity. English is the default interface; 한국어 is available from the language switcher.
 
 ## What it does

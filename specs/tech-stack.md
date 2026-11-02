@@ -1,9 +1,24 @@
-# Technical constitution
+# 기술 원칙 v2
 
-- TypeScript, React, Vite, and a small Node HTTP server.
-- Meta Model API calls occur only on the server. API keys never enter source code or the browser. Audio transcription uses the official file endpoint, and structured analysis uses Muse Spark via a compatible chat endpoint.
-- No remote database or accounts in the hackathon MVP. Sample data is explicitly labeled. User-entered state is session-only.
-- A no-key demo fallback is deterministic, clearly labeled as simulated, and never represented as Meta output. Real mode is available only when configured.
-- English is default; Korean is selectable. Interface strings live in a translation dictionary.
-- Accessible forms, explicit status messages, keyboard access and responsive layout are required.
-- Validate the production build, API error paths, and the core workflow. Never publish credentials, real personal information or unlicensed assets.
+## 구성
+
+현재 React·TypeScript·Vite 프런트와 Node·Express API를 이어서 개발한다. 단일 거대 컴포넌트를 화면·폼·API 클라이언트·도메인 계약으로 나누되 기능 작업과 함께 변경한다. 도메인 계약은 TypeScript와 런타임 스키마 검증을 공유한다.
+
+- 영구 데이터: PostgreSQL. 스키마·인덱스·제약·마이그레이션을 버전 관리한다.
+- 인증: 이메일 일회용 링크를 전송하는 공급자 어댑터. 서버 세션과 DB 저장, HttpOnly/Secure/SameSite 쿠키. 개발 환경 테스트 전송은 운영에서 켜지지 않는다.
+- 저장소: 비공개 객체 저장소. 업로드 검증, 용량 제한, 만료 URL, 삭제 작업. 프로필용 공개 자산과 대화/증빙용 비공개 자산을 구분한다.
+- 알림: PostgreSQL outbox와 워커. 서비스 내 알림+이메일. 별도 캐시나 메시지 브로커는 필요 근거가 생기면 추가한다.
+- AI: 서버의 Meta 어댑터. 키·모델·요청 한도·타임아웃·비용은 설정으로 관리한다.
+- 배포: 프런트 빌드+API, 별도 워커, 관리형 PostgreSQL, 객체 저장소와 이메일. 동일 출처 HTTPS를 기본으로 한다. 제공자와 운영 계정은 출시 전에 선택한다.
+
+## 엔지니어링 규칙
+
+외부 입력과 AI 출력은 스키마 검사한다. 상태 전이·승인·정원 갱신은 서버 트랜잭션으로 처리한다. 화면의 숨김을 권한 검사로 쓰지 않는다. 재시도되는 명령은 idempotency key를 받는다. 수정 충돌은 version과 409로 처리한다.
+
+날짜는 UTC와 IANA 시간대를 함께, 금액은 정수 최소 통화 단위와 currency로 저장한다. 개인정보·API 키·원문 음성을 로그에 남기지 않는다. 운영에서는 샘플 데이터와 테스트 계정을 자동 생성하지 않는다.
+
+## 작업 방식
+
+활성 기능마다 `plan.md`, `requirements.md`, `validation.md`를 만든다. 계획→구현→필요한 직접 검사→검증 결과 기록→커밋 순으로 진행한다. 다음 기능 전 로드맵과 미완료 항목을 갱신한다. 실행하지 않은 검사는 통과로 기록하지 않는다.
+
+기본 검증은 바뀐 도메인 테스트, 권한·데이터 경계 테스트와 타입 검사다. 전체 테스트는 출시 게이트 또는 넓은 영향이 있는 경우만 실행한다. 운영 DB 마이그레이션·공개 출시 전에는 구체적인 결과와 복구 계획을 검토한다.
