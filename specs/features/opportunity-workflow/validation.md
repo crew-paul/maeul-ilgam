@@ -12,3 +12,4 @@
 - Browser exercised English sample input, manual draft, unknown fields and approval to the youth view.
 - Meta transcription and generation remain unverified without an API key. Live deployment, Korean switch and mobile visual checks remain to be verified.
 - Deviation: audio input is WAV upload, not microphone recording. Missing terms are shown as editable fields, not a multi-turn spoken interview. The youth view displays user-entered conditions without automated compatibility evaluation.
+- Additional checks: Korean language switching preserved the active opportunity and inputs. Health and manual-draft HTTP routes returned expected no-key results. Taste skill source lint reports no failures and four warnings for app-section labels; those labels identify the current workflow and are retained. Full skill inspector could not be run under the installed Node 20 (it requires Node 22+); a desktop screenshot was visually reviewed, but mobile inspection remains open.
