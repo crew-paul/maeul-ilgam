@@ -38,3 +38,7 @@ Live Meta draft generation was tested with a fictional English request. Voice tr
 The constitution is in `specs/mission.md`, `specs/tech-stack.md`, and `specs/roadmap.md`. Each feature has a plan, requirements and validation document under `specs/features/`. See `submission/` for draft answers and a three-minute recording plan. All project-specific material in this repository was created during the hackathon; the repository uses third-party dependencies under their respective licenses.
 
 The problem is based on rural youth out-migration and the challenge of discovering local opportunities. We have not validated outcomes with users or demonstrated that the prototype changes employment or population retention.
+
+## Design credit
+
+The interface redesign was guided by [Unslop](https://github.com/heydamir/unslop), created by Damir Sokolovsky ([@heydamir](https://x.com/heydamir)), licensed under CC BY 4.0.
