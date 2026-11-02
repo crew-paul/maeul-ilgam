@@ -1,36 +1,23 @@
-# Latest silent product-footage cut
+# Current film credits
 
-`village-jobs-product-silent-en.mp4` contains only the five original continuous native browser MP4 recordings, English captions, and editorial titles. No stock character footage, synthetic narration, music, or audio track is included. No external generation service or model call was used for this revision.
+`village-jobs-photo-story-en.mp4` combines an illustrated fictional story and an actual app demo.
 
-The opening caption is a fictional strawberry-product photography scenario, not an interview, documented customer outcome, or demonstration of a sales platform. The requested Korean farmer and relaxed countryside youth scenes remain unproduced. Do not present this product-only cut as a finished story film.
+## Korean character photographs
 
-Local authentication uses an on-screen test code and sends no email. All contacts are fictional. The previous source provenance remains in `source/capture-provenance.json`; new output checks are in `source/korean-story/verification.json`.
+Eight photos generated using **Meta Muse Image (`muse-image-1.0`)** through the official Meta Model API. All people are fictional. Later shots use earlier images as identity/clothing references. Exact prompts and references are in `source/photo-story/photos.json` and `generate.mjs`; local originals are in `raw/photo-story/` and the source archive. Asset hashes are in `source/photo-story/verification.json`.
 
-## Previous narrated cut — archived credits
+FFmpeg animates the still photographs through eased pan/zoom and seven 0.4-second dissolves. These are animated photographs, not generated live-action video. The English notice identifies them as AI-generated and fictional. No interview, customer testimonial, verified completed job, sales increase, or population-retention outcome is claimed.
 
-# Video sources and production
+## Actual product footage
 
-Final movie: `village-jobs-demo-ko-en.mp4` (2:31, 1920×1080).
+Five continuous native browser MP4 recordings captured with Chrome's `Page.startScreenRecording`. Original provenance and hashes remain in `source/capture-provenance.json`. The original files are in the source archive. These show real app interactions and a live Meta Muse Spark extraction response; waits and pacing were edited.
 
-## Actual product video
+Names, work requests and contacts are fictional. Authentication uses a local test code and does not send email. The creator and applicant use separate hosts/cookies. The app facilitates contact; participants arrange work and payment directly. Data are in server memory and reset on restart.
 
-Five native browser MP4 recordings captured through CUA using Chrome's `Page.startScreenRecording` API. These are continuous video streams of real interactions, not an image-sequence reconstruction. The local raw archive contains the unedited files and timing markers; hashes are in `source/capture-provenance.json`.
+## Sound, subtitles and budget
 
-Only waits and pacing were edited. The filmed Meta Muse Spark request returned the structured fields shown. Local authentication uses an on-screen test code and does not send email. The creator and applicant use separate hosts/cookies. All names, work requests and contact data are fictional. No employment or population outcome is claimed.
+No audio track: no narration, character dialogue, background music or stock audio. Thirty-two continuous English captions are burned in and supplied separately as SRT.
 
-## Illustrative opening footage
+New AI generation uses Meta only: eight successful images, estimated $0.08 at the published unit price. This estimate is not a verified bill or credit-balance statement. No third-party paid generator, paid stock, extra credit balance or top-up was used. The prior Western stock footage and synthetic narration do not appear in this revision.
 
-- **Kampus Production** — [Man Harvesting Vegetables / senior couple in a garden](https://www.pexels.com/video/man-harvesting-vegetables-7655564/).
-- **Tima Miroshnichenko** — [Frustrated Teenager / person working at a desk](https://www.pexels.com/video/frustrated-teenager-4873113/).
-- Footage source terms: [Pexels License](https://www.pexels.com/license/).
-
-These scenes are labeled illustrative stock footage and a fictional scenario. The people shown are not users, interviewees, beneficiaries or endorsers of Village Jobs. Their location and circumstances are not asserted to match the project.
-
-## Narration, captions and editing
-
-- Korean synthetic narration: macOS **Yuna**, 165 words per minute. The authoritative narration text is `source/narration-ko.txt`.
-- English captions: 27 timed cues; burned into the movie and provided as `village-jobs-demo.en.srt`.
-- FFmpeg renders the native video cuts, caption band and titles; the app itself is not simulated or regenerated.
-- The final file has been decoded end to end and key visual frames inspected. The automated Korean speech-transcription check is a language/content check, not a claim of human listening review. See `source/verification.json`.
-
-No public video upload or organizer submission was performed in this task.
+Full decode, subtitle timing and motion checks are recorded in `source/photo-story/verification.json`. Public upload and organizer submission remain pending.

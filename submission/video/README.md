@@ -1,50 +1,29 @@
-# Video revision — Meta credit budget only
+# Current film: Korean photo story + actual product video
 
-**Latest review cut:** `village-jobs-product-silent-en.mp4` — silent, English captions, actual product footage only. **The requested Korean farmer/youth story scenes are still missing. This is not the completed story film or a submission-ready final.**
+**Use `village-jobs-photo-story-en.mp4`**: approximately 2:49, 1920×1080 H.264, silent with continuous English captions.
 
-The revised cut removes narration and the unrelated Western stock footage. A fictional strawberry-product photography task connects the caption setup to the actual app recording. No audio track, external video service, paid stock, or new model call is used to make this cut.
+The opening 32.4 seconds tell a fictional Korean farmer/youth story through eight Meta Muse Image photos, eased camera moves and seven dissolves. The farmer has strawberries to sell but needs product photos. A young adult relaxing on a rural porch discovers a nearby paid task, meets the farmer, and helps photograph the produce. The opening is visibly labeled AI-generated photos / fictional scenario.
 
-Budget is limited to the remaining portion of the originally granted **$150 Meta Model API credits**. No additional payment, top-up, vidIQ credits, or paid third-party generation is authorized. The remaining Meta balance was not verified. The account model list inspected during production had no video-generation model.
+The remaining 137 seconds are edited from the five continuous native browser MP4 recordings of the actual app. This section shows text entry, real Meta extraction, human correction, publishing, discovery, test verification, consent, contact sharing, withdrawal and current MVP limits. It is not a screenshot reconstruction. There is no narration, dialogue, music or audio track. English captions cover the entire film without timing gaps.
 
-- `village-jobs-product-silent-en.mp4` — latest product-only review cut.
-- `village-jobs-product-silent.en.srt` — English subtitles for this cut.
-- `source/korean-story/` — silent renderer, storyboard, timeline and verification.
-- `village-jobs-recording-originals.zip` — unedited native browser recordings.
+Local deliverables:
 
-Rebuild with FFmpeg with libass (no API call):
+- `village-jobs-photo-story-en.mp4` — current film.
+- `village-jobs-photo-story.en.srt` — 32 English subtitle cues, also burned into the film.
+- `village-jobs-photo-story-originals.zip` — eight original photos, five raw app recordings and production sources.
+- `raw/photo-story/` — original generated photos and generation ledger.
+- `source/photo-story/` — exact photo prompts, storyboards, renderer and verification.
+- [Credits](CREDITS.md).
 
-```sh
-python3 submission/video/source/korean-story/render.py --raw-dir /path/to/captured-media --ffmpeg /path/to/ffmpeg
-```
+Only Meta generated new AI assets. Eight successful outputs at the published $0.01/image price imply $0.08 estimated generation cost, within the original $150 Meta credit authorization. Two initial requests failed HTTP 400 size validation; this is not a verified account billing statement. No paid external service, separate credits, purchase or top-up was used.
 
-The directory needs the five take MP4s listed in the storyboard. Rendered media remain local and ignored by Git. Public upload and hackathon submission are pending.
-
-## Previous revision, retained for reference
-
-# Recorded demo — Korean narration, English captions
-
-**Current movie:** `village-jobs-demo-ko-en.mp4` · **2 minutes 31 seconds** · 1920×1080 H.264/AAC.
-
-The UI footage is edited from continuous native browser MP4 recordings of the working app. It is not assembled from screenshots. Two short opening clips provide a clearly labeled fictional illustration of the farmer/young-person problem.
-
-Files available locally:
-
-- `village-jobs-demo-ko-en.mp4` — complete Korean-narrated movie with readable English captions.
-- `village-jobs-demo.en.srt` — separate English subtitle file.
-- `village-jobs-recording-originals.zip` — five unedited app recordings, timestamp markers and provenance.
-- `source/` — storyboard, narration, edit timeline, render script and verification record.
-- [Credits and source information](CREDITS.md).
-
-The movie shows text entry, a real Meta Muse Spark response, human correction and review, posting without sign-in, independent applicant discovery, local test verification, consent, application, farmer contact visibility, withdrawal and honest MVP limits. It explicitly distinguishes test authentication, fictional data and memory-only storage from real-world validation.
-
-The old `maeul-ilgam-demo.mp4` is the superseded slideshow first cut. Use the new `village-jobs-demo-ko-en.mp4` for review.
-
-MP4s and the raw archive stay local rather than being committed to Git. Upload the reviewed final movie to a judge-accessible location before submitting. That upload and public link are still pending.
-
-Rebuild with macOS `say` (Yuna) and FFmpeg with libass:
+Re-render locally without another API call:
 
 ```sh
-python3 submission/video/source/render.py --raw-dir /path/to/captured-media --ffmpeg /path/to/ffmpeg
+python3 submission/video/source/photo-story/render.py --raw-dir /path/to/five-browser-takes --ffmpeg /path/to/ffmpeg
+python3 submission/video/source/photo-story/verify.py --ffmpeg /path/to/ffmpeg
 ```
 
-The raw directory needs the five take MP4s plus the two credited stock video files. `--only 09-auth` re-renders one scene and rebuilds the master without re-encoding unchanged scenes.
+The five browser take files are named in `source/photo-story/storyboard.json`; generated photos must be in `raw/photo-story/`. `generate.mjs` is for reproducing missing images through Meta with a locally configured API key; it skips existing files and does not retry automatically. Its exact prompts are in `photos.json` plus the shared character/style prompt in the script.
+
+Previous movies are retained locally for reference and are superseded. Media remain ignored by Git. Public upload and hackathon submission have not been performed.

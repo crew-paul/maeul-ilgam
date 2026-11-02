@@ -1,0 +1,418 @@
+[
+  {
+    "id": "01-harvest",
+    "type": "animated-photo",
+    "start": 0.0,
+    "duration": 4.0,
+    "file": "01-harvest.png",
+    "caption": "She has grown a beautiful harvest.\nNow she wants to sell it online.",
+    "motion": "eased zoom and pan; 0.4-second cross-dissolve"
+  },
+  {
+    "id": "02-boxes",
+    "type": "animated-photo",
+    "start": 4.0,
+    "duration": 4.0,
+    "file": "02-boxes.png",
+    "caption": "The gift boxes are ready.\nBut reaching buyers is unfamiliar territory.",
+    "motion": "eased zoom and pan; 0.4-second cross-dissolve"
+  },
+  {
+    "id": "03-phone",
+    "type": "animated-photo",
+    "start": 8.0,
+    "duration": 4.0,
+    "file": "03-phone.png",
+    "caption": "Where should she start?\nShe needs help taking product photos.",
+    "motion": "eased zoom and pan; 0.4-second cross-dissolve"
+  },
+  {
+    "id": "04-porch",
+    "type": "animated-photo",
+    "start": 12.0,
+    "duration": 4.0,
+    "file": "04-porch.png",
+    "caption": "Nearby, a young resident has\na slow afternoon with nothing planned.",
+    "motion": "eased zoom and pan; 0.4-second cross-dissolve"
+  },
+  {
+    "id": "05-idle",
+    "type": "animated-photo",
+    "start": 16.0,
+    "duration": 4.0,
+    "file": "05-idle.png",
+    "caption": "He has time and a camera.\nHe just has not found a local opportunity.",
+    "motion": "eased zoom and pan; 0.4-second cross-dissolve"
+  },
+  {
+    "id": "06-discover",
+    "type": "animated-photo",
+    "start": 20.0,
+    "duration": 4.0,
+    "file": "06-discover.png",
+    "caption": "A paid photography task nearby\ngives him a reason to get involved.",
+    "motion": "eased zoom and pan; 0.4-second cross-dissolve"
+  },
+  {
+    "id": "07-meet",
+    "type": "animated-photo",
+    "start": 24.0,
+    "duration": 4.0,
+    "file": "07-meet.png",
+    "caption": "Village Jobs helps them connect\nand arrange the work directly.",
+    "motion": "eased zoom and pan; 0.4-second cross-dissolve"
+  },
+  {
+    "id": "08-photography",
+    "type": "animated-photo",
+    "start": 28.0,
+    "duration": 4.399999999999999,
+    "file": "08-photography.png",
+    "caption": "A useful first step toward selling her harvest.\nHere is how the connection works.",
+    "motion": "eased zoom and pan; 0.4-second cross-dissolve"
+  },
+  {
+    "id": "03-home",
+    "label": "VILLAGE JOBS / FROM A LOCAL TASK TO A CONVERSATION",
+    "target": 10,
+    "parts": [
+      [
+        "creator-take.mp4",
+        0,
+        5.4
+      ]
+    ],
+    "cues": [
+      {
+        "start": 0.0,
+        "end": 5.0,
+        "en": "Let us follow one paid photography task.\nFrom posting to the first conversation."
+      },
+      {
+        "start": 5.0,
+        "end": 10.0,
+        "en": "English is the default.\nKorean is also available."
+      }
+    ],
+    "start": 32.4,
+    "duration": 10.0
+  },
+  {
+    "id": "04-text",
+    "label": "01 / TEXT FIRST. VOICE OPTIONAL.",
+    "target": 11,
+    "parts": [
+      [
+        "creator-take.mp4",
+        15.8,
+        12
+      ]
+    ],
+    "cues": [
+      {
+        "start": 0.0,
+        "end": 5.5,
+        "en": "Text is the default.\nEvery field is visible."
+      },
+      {
+        "start": 5.5,
+        "end": 11.0,
+        "en": "Voice is optional.\nPosting starts without sign-in."
+      }
+    ],
+    "start": 42.4,
+    "duration": 11.0
+  },
+  {
+    "id": "05-meta",
+    "label": "02 / REAL META MUSE SPARK RESPONSE",
+    "target": 13,
+    "parts": [
+      [
+        "creator-take.mp4",
+        32.5,
+        16
+      ]
+    ],
+    "cues": [
+      {
+        "start": 0.0,
+        "end": 6.5,
+        "en": "Meta Muse Spark extracts\nthe conditions stated in the text."
+      },
+      {
+        "start": 6.5,
+        "end": 13.0,
+        "en": "Place, timing, pay and people needed.\nThese fields came from the live model response."
+      }
+    ],
+    "start": 53.4,
+    "duration": 13.0
+  },
+  {
+    "id": "06-review",
+    "label": "03 / THE FARMER STAYS IN CONTROL",
+    "target": 13,
+    "parts": [
+      [
+        "creator-take.mp4",
+        56.8,
+        10.5
+      ],
+      [
+        "creator-take.mp4",
+        84.6,
+        4.5
+      ]
+    ],
+    "cues": [
+      {
+        "start": 0.0,
+        "end": 6.5,
+        "en": "The model does not make the final decision."
+      },
+      {
+        "start": 6.5,
+        "end": 13.0,
+        "en": "The farmer edits the pay and description,\nthen checks the date and time."
+      }
+    ],
+    "start": 66.4,
+    "duration": 13.0
+  },
+  {
+    "id": "07-publish",
+    "label": "04 / REVIEW, THEN PUBLISH",
+    "target": 8,
+    "parts": [
+      [
+        "creator-take.mp4",
+        92.7,
+        4
+      ],
+      [
+        "creator-take.mp4",
+        101,
+        5
+      ]
+    ],
+    "cues": [
+      {
+        "start": 0.0,
+        "end": 4.0,
+        "en": "After review, the opportunity is published."
+      },
+      {
+        "start": 4.0,
+        "end": 8.0,
+        "en": "The creator can edit or close it\nfrom the same browser."
+      }
+    ],
+    "start": 79.4,
+    "duration": 8.0
+  },
+  {
+    "id": "08-discover",
+    "label": "05 / DISCOVER LOCAL WORK",
+    "target": 10,
+    "parts": [
+      [
+        "applicant-take.mp4",
+        0,
+        9.6
+      ]
+    ],
+    "cues": [
+      {
+        "start": 0.0,
+        "end": 5.0,
+        "en": "A young person searches by town\nand opens the details."
+      },
+      {
+        "start": 5.0,
+        "end": 10.0,
+        "en": "Place, time and pay are visible\nwithout sign-in."
+      }
+    ],
+    "start": 87.4,
+    "duration": 10.0
+  },
+  {
+    "id": "09-auth",
+    "label": "06 / LOCAL TEST AUTHENTICATION",
+    "target": 9,
+    "auth": true,
+    "parts": [
+      [
+        "applicant-take.mp4",
+        9.6,
+        14
+      ]
+    ],
+    "cues": [
+      {
+        "start": 0.0,
+        "end": 4.5,
+        "en": "Applying requires verification."
+      },
+      {
+        "start": 4.5,
+        "end": 9.0,
+        "en": "This recording uses a local test code.\nNo email was sent."
+      }
+    ],
+    "start": 97.4,
+    "duration": 9.0
+  },
+  {
+    "id": "10-apply",
+    "label": "07 / CONTACT SHARING REQUIRES CONSENT",
+    "target": 13,
+    "parts": [
+      [
+        "applicant-take.mp4",
+        23.4,
+        5
+      ],
+      [
+        "applicant-take.mp4",
+        43,
+        10
+      ]
+    ],
+    "cues": [
+      {
+        "start": 0.0,
+        "end": 6.5,
+        "en": "The applicant adds a name and note,\nthen chooses a phone number or email."
+      },
+      {
+        "start": 6.5,
+        "end": 13.0,
+        "en": "Sharing that contact with this farmer\nrequires explicit consent."
+      }
+    ],
+    "start": 106.4,
+    "duration": 13.0
+  },
+  {
+    "id": "11-contact",
+    "label": "08 / START A DIRECT CONVERSATION",
+    "target": 13,
+    "parts": [
+      [
+        "contact-take.mp4",
+        0,
+        15
+      ]
+    ],
+    "cues": [
+      {
+        "start": 0.0,
+        "end": 6.5,
+        "en": "The farmer sees the shared contact\ninside My jobs."
+      },
+      {
+        "start": 6.5,
+        "end": 13.0,
+        "en": "They arrange the work and payment directly.\nThe app does not process payments."
+      }
+    ],
+    "start": 119.4,
+    "duration": 13.0
+  },
+  {
+    "id": "12-withdraw",
+    "label": "09 / WITHDRAWAL HIDES THE CONTACT",
+    "target": 12,
+    "parts": [
+      [
+        "withdraw-take.mp4",
+        0,
+        2
+      ],
+      [
+        "withdraw-take.mp4",
+        8.5,
+        6
+      ],
+      [
+        "privacy-take.mp4",
+        0,
+        5
+      ]
+    ],
+    "cues": [
+      {
+        "start": 0.0,
+        "end": 6.0,
+        "en": "Withdrawing hides the contact\nfrom subsequent farmer requests."
+      },
+      {
+        "start": 6.0,
+        "end": 12.0,
+        "en": "It cannot take back information\nthe farmer has already seen."
+      }
+    ],
+    "start": 132.4,
+    "duration": 12.0
+  },
+  {
+    "id": "13-limits",
+    "label": "10 / HONEST MVP BOUNDARIES",
+    "target": 15,
+    "parts": [
+      [
+        "privacy-take.mp4",
+        41,
+        6
+      ],
+      [
+        "privacy-take.mp4",
+        49.5,
+        9
+      ]
+    ],
+    "cues": [
+      {
+        "start": 0.0,
+        "end": 7.5,
+        "en": "Data currently lives in server memory\nand resets when the server restarts."
+      },
+      {
+        "start": 7.5,
+        "end": 15.0,
+        "en": "Real-user validation and effects on\nrural population retention remain unproven."
+      }
+    ],
+    "start": 144.4,
+    "duration": 15.0
+  },
+  {
+    "id": "14-outro",
+    "label": "VILLAGE JOBS / BUILD FOR YOUR WORLD",
+    "target": 10,
+    "outro": true,
+    "parts": [
+      [
+        "privacy-take.mp4",
+        72,
+        12
+      ]
+    ],
+    "cues": [
+      {
+        "start": 0.0,
+        "end": 5.0,
+        "en": "Discover an opportunity to work\ncloser to home."
+      },
+      {
+        "start": 5.0,
+        "end": 10.0,
+        "en": "Village Jobs helps start\nthe first conversation."
+      }
+    ],
+    "start": 159.4,
+    "duration": 10.0
+  }
+]

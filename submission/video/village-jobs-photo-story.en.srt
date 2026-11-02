@@ -1,0 +1,157 @@
+1
+00:00:00,000 --> 00:00:04,000
+She has grown a beautiful harvest.
+Now she wants to sell it online.
+
+2
+00:00:04,000 --> 00:00:08,000
+The gift boxes are ready.
+But reaching buyers is unfamiliar territory.
+
+3
+00:00:08,000 --> 00:00:12,000
+Where should she start?
+She needs help taking product photos.
+
+4
+00:00:12,000 --> 00:00:16,000
+Nearby, a young resident has
+a slow afternoon with nothing planned.
+
+5
+00:00:16,000 --> 00:00:20,000
+He has time and a camera.
+He just has not found a local opportunity.
+
+6
+00:00:20,000 --> 00:00:24,000
+A paid photography task nearby
+gives him a reason to get involved.
+
+7
+00:00:24,000 --> 00:00:28,000
+Village Jobs helps them connect
+and arrange the work directly.
+
+8
+00:00:28,000 --> 00:00:32,400
+A useful first step toward selling her harvest.
+Here is how the connection works.
+
+9
+00:00:32,400 --> 00:00:37,400
+Let us follow one paid photography task.
+From posting to the first conversation.
+
+10
+00:00:37,400 --> 00:00:42,400
+English is the default.
+Korean is also available.
+
+11
+00:00:42,400 --> 00:00:47,900
+Text is the default.
+Every field is visible.
+
+12
+00:00:47,900 --> 00:00:53,400
+Voice is optional.
+Posting starts without sign-in.
+
+13
+00:00:53,400 --> 00:00:59,900
+Meta Muse Spark extracts
+the conditions stated in the text.
+
+14
+00:00:59,900 --> 00:01:06,400
+Place, timing, pay and people needed.
+These fields came from the live model response.
+
+15
+00:01:06,400 --> 00:01:12,900
+The model does not make the final decision.
+
+16
+00:01:12,900 --> 00:01:19,400
+The farmer edits the pay and description,
+then checks the date and time.
+
+17
+00:01:19,400 --> 00:01:23,400
+After review, the opportunity is published.
+
+18
+00:01:23,400 --> 00:01:27,400
+The creator can edit or close it
+from the same browser.
+
+19
+00:01:27,400 --> 00:01:32,400
+A young person searches by town
+and opens the details.
+
+20
+00:01:32,400 --> 00:01:37,400
+Place, time and pay are visible
+without sign-in.
+
+21
+00:01:37,400 --> 00:01:41,900
+Applying requires verification.
+
+22
+00:01:41,900 --> 00:01:46,400
+This recording uses a local test code.
+No email was sent.
+
+23
+00:01:46,400 --> 00:01:52,900
+The applicant adds a name and note,
+then chooses a phone number or email.
+
+24
+00:01:52,900 --> 00:01:59,400
+Sharing that contact with this farmer
+requires explicit consent.
+
+25
+00:01:59,400 --> 00:02:05,900
+The farmer sees the shared contact
+inside My jobs.
+
+26
+00:02:05,900 --> 00:02:12,400
+They arrange the work and payment directly.
+The app does not process payments.
+
+27
+00:02:12,400 --> 00:02:18,400
+Withdrawing hides the contact
+from subsequent farmer requests.
+
+28
+00:02:18,400 --> 00:02:24,400
+It cannot take back information
+the farmer has already seen.
+
+29
+00:02:24,400 --> 00:02:31,900
+Data currently lives in server memory
+and resets when the server restarts.
+
+30
+00:02:31,900 --> 00:02:39,400
+Real-user validation and effects on
+rural population retention remain unproven.
+
+31
+00:02:39,400 --> 00:02:44,400
+Discover an opportunity to work
+closer to home.
+
+32
+00:02:44,400 --> 00:02:49,400
+Village Jobs helps start
+the first conversation.
+

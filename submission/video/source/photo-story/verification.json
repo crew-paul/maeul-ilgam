@@ -1,0 +1,105 @@
+{
+  "durationSeconds": 169.4,
+  "resolution": "1920x1080",
+  "videoCodec": "H.264",
+  "audioStreams": 0,
+  "generatedPhotos": 8,
+  "photoStorySeconds": 32.4,
+  "captionLanguage": "English",
+  "captionCues": 32,
+  "captionCoverage": "continuous from 0 to end, no timing gaps or overlaps",
+  "fullDecode": "passed",
+  "photoMotion": [
+    {
+      "shot": 1,
+      "meanPixelDifference": 27.328
+    },
+    {
+      "shot": 2,
+      "meanPixelDifference": 33.592
+    },
+    {
+      "shot": 3,
+      "meanPixelDifference": 30.785
+    },
+    {
+      "shot": 4,
+      "meanPixelDifference": 20.486
+    },
+    {
+      "shot": 5,
+      "meanPixelDifference": 30.043
+    },
+    {
+      "shot": 6,
+      "meanPixelDifference": 33.439
+    },
+    {
+      "shot": 7,
+      "meanPixelDifference": 22.369
+    },
+    {
+      "shot": 8,
+      "meanPixelDifference": 36.328
+    }
+  ],
+  "photoTransitions": "seven 0.4-second cross-dissolves",
+  "appSource": "five existing native browser MP4 recordings; edited real interactions",
+  "generation": "Meta Muse Image; eight successful image outputs; two initial HTTP 400 size-validation failures",
+  "estimatedNewImageCostUsd": 0.08,
+  "costNote": "Published unit-price estimate, not a verified billing statement; no external paid services",
+  "visualReview": "All eight source photos inspected for story, consistent fictional Korean characters and outfits. Edited opening, relaxed youth, meeting, product shoot, transition to app, Meta extraction, authentication and outro key frames inspected. No full manual playback claim.",
+  "bytes": 18134442,
+  "sha256": "bd56963d57e6f7d8200e6585b772871d50a43a87354966132cf95343bd657b62",
+  "assets": [
+    {
+      "file": "raw/photo-story/01-harvest.png",
+      "sha256": "e00981a01e0319765826ed807dd1b05fc00d3bc5646e70c6a4e478f7e1c9d829",
+      "model": "muse-image-1.0",
+      "fictional": true
+    },
+    {
+      "file": "raw/photo-story/02-boxes.png",
+      "sha256": "9379f3ed3fcae5c44e14481cb62be443fb415a5ed2a9c9a309f1322f0bf7d757",
+      "model": "muse-image-1.0",
+      "fictional": true
+    },
+    {
+      "file": "raw/photo-story/03-phone.png",
+      "sha256": "04e08e3431d5de3a7599ff4141ebbc72972220a54a217e09ba1915a954ac0838",
+      "model": "muse-image-1.0",
+      "fictional": true
+    },
+    {
+      "file": "raw/photo-story/04-porch.png",
+      "sha256": "79b69b16d969f2306592abfef85d5d25cdb97306c68d54172ebb368caa345e59",
+      "model": "muse-image-1.0",
+      "fictional": true
+    },
+    {
+      "file": "raw/photo-story/05-idle.png",
+      "sha256": "c87bf5844f64a63283433b540b1af64ac9db3e2d9fdce879c2a4bea7a6ec86d8",
+      "model": "muse-image-1.0",
+      "fictional": true
+    },
+    {
+      "file": "raw/photo-story/06-discover.png",
+      "sha256": "57c2c7e1198b0596aaf4877d0ec7d8c160911ac07f55c2f40c1dd762db79d017",
+      "model": "muse-image-1.0",
+      "fictional": true
+    },
+    {
+      "file": "raw/photo-story/07-meet.png",
+      "sha256": "c330c38ef9666eeea277bd85a422a1263d13c61cb8f292e3d8b2cb9bfecc3f2d",
+      "model": "muse-image-1.0",
+      "fictional": true
+    },
+    {
+      "file": "raw/photo-story/08-photography.png",
+      "sha256": "79aad487fdf8b30b39976f17ecb0d1509cb01521d6fc562c6212ab7bbcc109f3",
+      "model": "muse-image-1.0",
+      "fictional": true
+    }
+  ],
+  "publicUpload": "not performed"
+}

@@ -1,32 +1,27 @@
-# Current video status
+# Current demo — photo story followed by actual product video
 
-Latest local review cut: `video/village-jobs-product-silent-en.mp4`. English subtitles only; no audio track. This cut uses actual app video and removes the previous Western stock openings. It shows the product flow around a fictional strawberry-product photography task.
+Local movie: `video/village-jobs-photo-story-en.mp4`, approximately 2:49, 1920×1080. Silent throughout, with 32 continuous English caption cues burned into the video and also provided as [SRT](video/village-jobs-photo-story.en.srt).
 
-The Korean elderly farmer selling-produce setup, relaxed countryside youth, and filmed resolution are **not yet produced**. This is a product-footage review cut, not a finished story demo. Only the remaining originally granted Meta $150 credit is authorized; no paid external video generation or stock purchase is allowed.
-
-Timeline: [edit-timeline.json](video/source/korean-story/edit-timeline.json). Subtitles: [SRT](video/village-jobs-product-silent.en.srt). Verification: [verification.json](video/source/korean-story/verification.json). Public upload and event submission are pending.
-
-## Previous narrated version, archived
-
-# Recorded demo timeline
-
-Korean narration with English captions. Current local video: `video/village-jobs-demo-ko-en.mp4`, 2:31. This replaces the old script-only and screenshot-based cut.
+The first 32.4 seconds use eight Meta Muse Image photographs of fictional Korean characters. Eased pan/zoom and seven dissolves keep the visual sequence moving. An older farmer wants to sell strawberries but needs product photos; a young person with a slow countryside afternoon finds a local task; they meet and photograph the produce. This illustrates the intended use, not a verified customer or sales result. The remaining 137 seconds show actual browser-recorded app interactions.
 
 | Start | Section |
 |---|---|
-| 0:00 | A LITTLE HELP CAN MATTER |
-| 0:08 | OPPORTUNITY SHOULD BE EASIER TO FIND |
-| 0:16 | VILLAGE JOBS / 마을일감 |
-| 0:24 | 01 / TEXT FIRST. VOICE OPTIONAL. |
-| 0:35 | 02 / REAL META MUSE SPARK RESPONSE |
-| 0:48 | 03 / THE FARMER STAYS IN CONTROL |
-| 1:01 | 04 / REVIEW, THEN PUBLISH |
-| 1:09 | 05 / DISCOVER LOCAL WORK |
-| 1:19 | 06 / LOCAL TEST AUTHENTICATION |
-| 1:28 | 07 / CONTACT SHARING REQUIRES CONSENT |
-| 1:41 | 08 / START A DIRECT CONVERSATION |
-| 1:54 | 09 / WITHDRAWAL HIDES THE CONTACT |
-| 2:06 | 10 / HONEST MVP BOUNDARIES |
-| 2:21 | VILLAGE JOBS / BUILD FOR YOUR WORLD |
+| 0:00 | Korean farmer: harvest, packing, online-selling uncertainty |
+| 0:12 | Relaxed rural youth: idle afternoon, nearby photography task |
+| 0:24 | Fictional meeting and collaborative product photography |
+| 0:32 | VILLAGE JOBS / FROM A LOCAL TASK TO A CONVERSATION |
+| 0:42 | 01 / TEXT FIRST. VOICE OPTIONAL. |
+| 0:53 | 02 / REAL META MUSE SPARK RESPONSE |
+| 1:06 | 03 / THE FARMER STAYS IN CONTROL |
+| 1:19 | 04 / REVIEW, THEN PUBLISH |
+| 1:27 | 05 / DISCOVER LOCAL WORK |
+| 1:37 | 06 / LOCAL TEST AUTHENTICATION |
+| 1:46 | 07 / CONTACT SHARING REQUIRES CONSENT |
+| 1:59 | 08 / START A DIRECT CONVERSATION |
+| 2:12 | 09 / WITHDRAWAL HIDES THE CONTACT |
+| 2:24 | 10 / HONEST MVP BOUNDARIES |
+| 2:39 | VILLAGE JOBS / BUILD FOR YOUR WORLD |
 
-Full Korean narration: [narration-ko.txt](video/source/narration-ko.txt). English subtitles: [SRT](video/village-jobs-demo.en.srt). [Credits and verification](video/CREDITS.md). Public upload and event submission remain pending.
+[Exact photo prompts and English story captions](video/source/photo-story/photos.json). [App storyboard and captions](video/source/photo-story/storyboard.json). [Verification](video/source/photo-story/verification.json). [Credits](video/CREDITS.md).
+
+The app demonstration uses fictional contacts and local test authentication, not live email delivery. Memory-only storage and unproven impact are stated in the film. Work and payment are arranged directly. Public video upload and organizer submission remain pending. This cut supersedes previous narrated, stock-only, and product-only cuts.
