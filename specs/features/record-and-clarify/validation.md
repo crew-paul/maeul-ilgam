@@ -7,3 +7,4 @@ Run build and focused audio/draft tests. Exercise follow-up with English and Kor
 - Production build and TypeScript check passed; existing focused test passed.
 - With live Meta API, fictional English additional details populated location, time and pay without modifying the task; browser exercised the same update and approved card.
 - Browser microphone permission and recording have not been exercised; real Korean/dialect speech and a live Korean follow-up remain untested.
+- A separate live Korean Muse Spark request returned the expected task, location, time and pay. This was a text test, not a dialect or microphone test.
