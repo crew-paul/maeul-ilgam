@@ -1,12 +1,12 @@
 {
-  "durationSeconds": 169.4,
+  "durationSeconds": 112.4,
   "resolution": "1920x1080",
   "videoCodec": "H.264",
   "audioStreams": 0,
   "generatedPhotos": 8,
   "photoStorySeconds": 32.4,
   "captionLanguage": "English",
-  "captionCues": 32,
+  "captionCues": 30,
   "captionCoverage": "continuous from 0 to end, no timing gaps or overlaps",
   "fullDecode": "passed",
   "photoMotion": [
@@ -43,14 +43,19 @@
       "meanPixelDifference": 36.328
     }
   ],
+  "introUnchanged": "First 972 decoded frames exactly match the previously verified movie",
+  "maxCaptionCharactersPerSecond": 19.5,
   "photoTransitions": "seven 0.4-second cross-dissolves",
   "appSource": "five existing native browser MP4 recordings; edited real interactions",
   "generation": "Meta Muse Image; eight successful image outputs; two initial HTTP 400 size-validation failures",
   "estimatedNewImageCostUsd": 0.08,
   "costNote": "Published unit-price estimate, not a verified billing statement; no external paid services",
-  "visualReview": "All eight source photos inspected for story, consistent fictional Korean characters and outfits. Edited opening, relaxed youth, meeting, product shoot, transition to app, Meta extraction, authentication and outro key frames inspected. No full manual playback claim.",
-  "bytes": 18134442,
-  "sha256": "bd56963d57e6f7d8200e6585b772871d50a43a87354966132cf95343bd657b62",
+  "visualReview": "Edited Meta extraction, published job, test-code verification, shared contact and outro key frames inspected. The first 972 decoded frames match the previously verified photo intro exactly. Full manual playback not claimed.",
+  "appDemoSeconds": 80,
+  "previousAppDemoSeconds": 137,
+  "newGenerationCallsThisRevision": 0,
+  "bytes": 17112700,
+  "sha256": "4f6875022f15536c4af235a68324a8cb6ee94644c7c5ca17af673dfec8f25d64",
   "assets": [
     {
       "file": "raw/photo-story/01-harvest.png",
@@ -101,5 +106,6 @@
       "fictional": true
     }
   ],
-  "publicUpload": "not performed"
+  "publicUpload": "not performed",
+  "incrementalGenerationCostThisRevisionUsd": 0
 }

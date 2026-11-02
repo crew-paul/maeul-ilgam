@@ -1,6 +1,6 @@
 # Current film credits
 
-`village-jobs-photo-story-en.mp4` combines an illustrated fictional story and an actual app demo.
+`village-jobs-photo-story-fast-en.mp4` combines an illustrated fictional story and an actual app demo.
 
 ## Korean character photographs
 
@@ -16,7 +16,7 @@ Names, work requests and contacts are fictional. Authentication uses a local tes
 
 ## Sound, subtitles and budget
 
-No audio track: no narration, character dialogue, background music or stock audio. Thirty-two continuous English captions are burned in and supplied separately as SRT.
+No audio track: no narration, character dialogue, background music or stock audio. Thirty continuous English captions are burned in and supplied separately as SRT.
 
 New AI generation uses Meta only: eight successful images, estimated $0.08 at the published unit price. This estimate is not a verified bill or credit-balance statement. No third-party paid generator, paid stock, extra credit balance or top-up was used. The prior Western stock footage and synthetic narration do not appear in this revision.
 

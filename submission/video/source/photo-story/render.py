@@ -6,7 +6,7 @@ Smooth pan/zoom and dissolves; continuous English captions; no audio. Rendering 
 """
 import argparse,json,subprocess,re,wave,shutil
 from pathlib import Path
-p=argparse.ArgumentParser();p.add_argument('--only',help='Render only these comma-separated scene ids, then rebuild the master');p.add_argument('--raw-dir',type=Path,required=True);p.add_argument('--ffmpeg',default=shutil.which('ffmpeg'));p.add_argument('--output-dir',type=Path,default=Path(__file__).resolve().parents[2]);args=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--reuse-intro',action='store_true',help='Reuse the unchanged existing photo-story intro');p.add_argument('--only',help='Render only these comma-separated scene ids, then rebuild the master');p.add_argument('--raw-dir',type=Path,required=True);p.add_argument('--ffmpeg',default=shutil.which('ffmpeg'));p.add_argument('--output-dir',type=Path,default=Path(__file__).resolve().parents[2]);args=p.parse_args()
 assert args.ffmpeg,'FFmpeg is required';ff=args.ffmpeg;raw=args.raw_dir;out=args.output_dir;work=raw/'edit-photo-story';work.mkdir(exist_ok=True);out.mkdir(exist_ok=True)
 scenes=json.loads(Path(__file__).with_name('storyboard.json').read_text())
 def run(cmd):
@@ -64,7 +64,7 @@ for i in range(1,len(photo_clips)):
  filters.append(f'[{last}][{i}:v]xfade=transition=fade:duration=0.4:offset={i*4.}[{tag}]');last=tag
 filters.append(f'[{last}]drawbox=x=0:y=0:w=iw:h=46:color=0x13261a@0.92:t=fill,drawbox=x=0:y=946:w=1920:h=134:color=0x13261a:t=fill,ass={intro_ass.as_posix()},format=yuv420p[v]')
 intro=work/'intro.mp4'
-run(cmd+['-filter_complex',';'.join(filters),'-map','[v]','-an','-t',str(intro_duration),'-r','30','-c:v','libx264','-preset','fast','-crf','19','-pix_fmt','yuv420p','-y',str(intro)])
+if not args.reuse_intro or not intro.exists():run(cmd+['-filter_complex',';'.join(filters),'-map','[v]','-an','-t',str(intro_duration),'-r','30','-c:v','libx264','-preset','fast','-crf','19','-pix_fmt','yuv420p','-y',str(intro)])
 elapsed=intro_duration
 for idx,s in enumerate(scenes):
  duration=float(s['target']);local=[]
@@ -102,9 +102,9 @@ for idx,s in enumerate(scenes):
  timeline.append({**s,'start':round(elapsed,3),'duration':round(duration,3),'cues':[{'start':round(a,3),'end':round(b,3),'en':en} for a,b,en in local]});elapsed+=duration;print(f'{s["id"]}: {duration:.2f}s / total {elapsed:.2f}s',flush=True)
 assert elapsed<=180,f'Runtime too long: {elapsed:.2f}'
 concat=work/'concat.txt';concat.write_text(f"file '{intro}'\n"+''.join(f"file '{work/(s['id']+'.mp4')}'\n" for s in scenes))
-master=out/'village-jobs-photo-story-en.mp4'
+master=out/'village-jobs-photo-story-fast-en.mp4'
 run([ff,'-hide_banner','-loglevel','error','-f','concat','-safe','0','-i',str(concat),'-c','copy','-metadata','title=Village Jobs — Korean photo story and live demo, English subtitles','-metadata','comment=Meta Muse Image fictional Korean photo story, animated stills, followed by native browser footage. No narration. Test authentication.','-movflags','+faststart','-y',str(master)])
-(out/'village-jobs-photo-story.en.srt').write_text(''.join(f'{i+1}\n{srt_time(a)} --> {srt_time(b)}\n{en}\n\n' for i,(a,b,en) in enumerate(global_cues)))
+(out/'village-jobs-photo-story-fast.en.srt').write_text(''.join(f'{i+1}\n{srt_time(a)} --> {srt_time(b)}\n{en}\n\n' for i,(a,b,en) in enumerate(global_cues)))
 (out/'source'/'photo-story'/'edit-timeline.json').write_text(json.dumps(timeline,ensure_ascii=False,indent=2)+'\n')
 
 print(json.dumps({'output':str(master),'duration':elapsed,'bytes':master.stat().st_size}))

@@ -2,7 +2,7 @@
   {
     "id": "03-home",
     "label": "VILLAGE JOBS / FROM A LOCAL TASK TO A CONVERSATION",
-    "target": 10,
+    "target": 5,
     "parts": [
       [
         "creator-take.mp4",
@@ -11,14 +11,14 @@
       ]
     ],
     "cues": [
-      "Let us follow one paid photography task.\nFrom posting to the first conversation.",
-      "English is the default.\nKorean is also available."
+      "One local task. One useful connection.",
+      "English first. Korean available."
     ]
   },
   {
     "id": "04-text",
     "label": "01 / TEXT FIRST. VOICE OPTIONAL.",
-    "target": 11,
+    "target": 6,
     "parts": [
       [
         "creator-take.mp4",
@@ -27,72 +27,82 @@
       ]
     ],
     "cues": [
-      "Text is the default.\nEvery field is visible.",
-      "Voice is optional.\nPosting starts without sign-in."
+      "Post a task without signing in.",
+      "Text first. Voice is optional."
     ]
   },
   {
     "id": "05-meta",
     "label": "02 / REAL META MUSE SPARK RESPONSE",
-    "target": 13,
+    "target": 9,
     "parts": [
       [
         "creator-take.mp4",
         32.5,
-        16
+        3.5
+      ],
+      [
+        "creator-take.mp4",
+        42.8,
+        5.7
       ]
     ],
     "cues": [
-      "Meta Muse Spark extracts\nthe conditions stated in the text.",
-      "Place, timing, pay and people needed.\nThese fields came from the live model response."
+      "Meta Muse Spark extracts the task conditions.",
+      "Place, time, pay and people needed."
     ]
   },
   {
     "id": "06-review",
     "label": "03 / THE FARMER STAYS IN CONTROL",
-    "target": 13,
+    "target": 8,
     "parts": [
       [
         "creator-take.mp4",
         56.8,
-        10.5
+        4
+      ],
+      [
+        "creator-take.mp4",
+        63,
+        4.3
       ],
       [
         "creator-take.mp4",
         84.6,
-        4.5
+        3.5
       ]
     ],
     "cues": [
-      "The model does not make the final decision.",
-      "The farmer edits the pay and description,\nthen checks the date and time."
+      "The farmer stays in control.",
+      "Edit the pay and description, then review."
     ]
   },
   {
     "id": "07-publish",
     "label": "04 / REVIEW, THEN PUBLISH",
-    "target": 8,
+    "target": 4,
     "parts": [
       [
         "creator-take.mp4",
         92.7,
-        4
+        1.8
       ],
       [
         "creator-take.mp4",
         101,
-        5
+        4
       ]
     ],
     "cues": [
-      "After review, the opportunity is published.",
-      "The creator can edit or close it\nfrom the same browser."
+      "Review, then publish.",
+      "Edit or close it from the same browser."
     ]
   },
   {
     "id": "08-discover",
     "label": "05 / DISCOVER LOCAL WORK",
-    "target": 10,
+    "target": 6,
     "parts": [
       [
         "applicant-take.mp4",
@@ -101,31 +111,35 @@
       ]
     ],
     "cues": [
-      "A young person searches by town\nand opens the details.",
-      "Place, time and pay are visible\nwithout sign-in."
+      "Search by town and open the details.",
+      "See the place, time and pay before signing in."
     ]
   },
   {
     "id": "09-auth",
     "label": "06 / LOCAL TEST AUTHENTICATION",
-    "target": 9,
+    "target": 5,
     "auth": true,
     "parts": [
       [
         "applicant-take.mp4",
         9.6,
-        14
+        3
+      ],
+      [
+        "applicant-take.mp4",
+        17.3,
+        6.3
       ]
     ],
     "cues": [
-      "Applying requires verification.",
-      "This recording uses a local test code.\nNo email was sent."
+      "Verify before applying.\nLocal test code only; no email sent."
     ]
   },
   {
     "id": "10-apply",
     "label": "07 / CONTACT SHARING REQUIRES CONSENT",
-    "target": 13,
+    "target": 8,
     "parts": [
       [
         "applicant-take.mp4",
@@ -139,30 +153,35 @@
       ]
     ],
     "cues": [
-      "The applicant adds a name and note,\nthen chooses a phone number or email.",
-      "Sharing that contact with this farmer\nrequires explicit consent."
+      "Add a name, note and contact.",
+      "Explicit consent is required to share it."
     ]
   },
   {
     "id": "11-contact",
     "label": "08 / START A DIRECT CONVERSATION",
-    "target": 13,
+    "target": 8,
     "parts": [
       [
         "contact-take.mp4",
         0,
-        15
+        3
+      ],
+      [
+        "contact-take.mp4",
+        8,
+        6
       ]
     ],
     "cues": [
-      "The farmer sees the shared contact\ninside My jobs.",
-      "They arrange the work and payment directly.\nThe app does not process payments."
+      "The farmer sees the shared contact in My jobs.",
+      "They arrange the work and payment directly."
     ]
   },
   {
     "id": "12-withdraw",
     "label": "09 / WITHDRAWAL HIDES THE CONTACT",
-    "target": 12,
+    "target": 7,
     "parts": [
       [
         "withdraw-take.mp4",
@@ -181,14 +200,14 @@
       ]
     ],
     "cues": [
-      "Withdrawing hides the contact\nfrom subsequent farmer requests.",
-      "It cannot take back information\nthe farmer has already seen."
+      "Withdrawal hides the shared contact.",
+      "Already-seen information cannot be taken back."
     ]
   },
   {
     "id": "13-limits",
     "label": "10 / HONEST MVP BOUNDARIES",
-    "target": 15,
+    "target": 9,
     "parts": [
       [
         "privacy-take.mp4",
@@ -202,14 +221,14 @@
       ]
     ],
     "cues": [
-      "Data currently lives in server memory\nand resets when the server restarts.",
-      "Real-user validation and effects on\nrural population retention remain unproven."
+      "Memory-only data resets on server restart.",
+      "Real-user validation and retention impact\nremain unproven."
     ]
   },
   {
     "id": "14-outro",
     "label": "VILLAGE JOBS / BUILD FOR YOUR WORLD",
-    "target": 10,
+    "target": 5,
     "outro": true,
     "parts": [
       [
@@ -219,8 +238,7 @@
       ]
     ],
     "cues": [
-      "Discover an opportunity to work\ncloser to home.",
-      "Village Jobs helps start\nthe first conversation."
+      "Village Jobs.\nA local opportunity starts with a conversation."
     ]
   }
 ]
